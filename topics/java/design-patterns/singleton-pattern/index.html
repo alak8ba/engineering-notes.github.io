@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-implementation-basique" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Implémentation basique
+        2. Implémentation basique
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#3-probleme-en-multithreading" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 3. Problème en multithreading
+        3. Problème en multithreading
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#4-version-thread-safe-synchronized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 4. Version thread-safe (synchronized)
+        4. Version thread-safe (synchronized)
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#5-double-checked-locking-optimise" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 5. Double-checked locking (optimisé)
+        5. Double-checked locking (optimisé)
       
     </span>
   </a>
@@ -1732,7 +1732,7 @@
   <a href="#7-quand-utiliser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 7. Quand utiliser ?
+        7. Quand utiliser ?
       
     </span>
   </a>
@@ -1743,7 +1743,7 @@
   <a href="#8-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 8. Pièges fréquents
+        8. Pièges fréquents
       
     </span>
   </a>
@@ -1754,7 +1754,7 @@
   <a href="#9-singleton-vs-di" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔄 9. Singleton vs DI
+        9. Singleton vs DI
       
     </span>
   </a>
@@ -1765,12 +1765,12 @@
   <a href="#10-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 10. Questions classiques
+        10. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 10. Questions classiques">
+    <nav class="md-nav" aria-label="10. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1815,7 +1815,7 @@
   <a href="#11-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 11. À retenir
+        11. À retenir
       
     </span>
   </a>
@@ -1853,11 +1853,11 @@
 <h1 id="java-singleton-pattern-instance-unique">Java — Singleton Pattern (Instance unique)<a class="headerlink" href="#java-singleton-pattern-instance-unique" title="Permanent link">&para;</a></h1>
 <p>Le <strong>Singleton Pattern</strong> est un design pattern qui garantit qu’une classe n’a <strong>qu’une seule instance</strong> dans toute l’application.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 Une seule instance
-👉 accès global à cette instance</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p>Une seule instance
+accès global à cette instance</p>
 <hr />
-<h2 id="2-implementation-basique">🧩 2. Implémentation basique<a class="headerlink" href="#2-implementation-basique" title="Permanent link">&para;</a></h2>
+<h2 id="2-implementation-basique">2. Implémentation basique<a class="headerlink" href="#2-implementation-basique" title="Permanent link">&para;</a></h2>
 <p>```java id="a9f3kd"
 class Singleton {
     private static Singleton instance;</p>
@@ -1873,16 +1873,16 @@ public static Singleton getInstance() {
 <p>}
 ```
 
-👉 Problème :
+Problème :
 
 * ❌ pas thread-safe</p>
 <hr />
-<h2 id="3-probleme-en-multithreading">⚠️ 3. Problème en multithreading<a class="headerlink" href="#3-probleme-en-multithreading" title="Permanent link">&para;</a></h2>
-<p>👉 Deux threads peuvent créer <strong>deux instances différentes</strong>
+<h2 id="3-probleme-en-multithreading">3. Problème en multithreading<a class="headerlink" href="#3-probleme-en-multithreading" title="Permanent link">&para;</a></h2>
+<p>Deux threads peuvent créer <strong>deux instances différentes</strong>
 
 💥 bug critique</p>
 <hr />
-<h2 id="4-version-thread-safe-synchronized">✅ 4. Version thread-safe (synchronized)<a class="headerlink" href="#4-version-thread-safe-synchronized" title="Permanent link">&para;</a></h2>
+<h2 id="4-version-thread-safe-synchronized">4. Version thread-safe (synchronized)<a class="headerlink" href="#4-version-thread-safe-synchronized" title="Permanent link">&para;</a></h2>
 <p><code>java id="l2p8zs"
 public static synchronized Singleton getInstance() {
     if (instance == null) {
@@ -1890,10 +1890,10 @@ public static synchronized Singleton getInstance() {
     }
     return instance;
 }</code></p>
-<p>👉 ✔️ safe
-👉 ❌ plus lent</p>
+<p>safe
+plus lent</p>
 <hr />
-<h2 id="5-double-checked-locking-optimise">🔥 5. Double-checked locking (optimisé)<a class="headerlink" href="#5-double-checked-locking-optimise" title="Permanent link">&para;</a></h2>
+<h2 id="5-double-checked-locking-optimise">5. Double-checked locking (optimisé)<a class="headerlink" href="#5-double-checked-locking-optimise" title="Permanent link">&para;</a></h2>
 <p>```java id="w4n7yt"
 class Singleton {
     private static volatile Singleton instance;</p>
@@ -1913,8 +1913,8 @@ public static Singleton getInstance() {
 <p>}
 ```
 
-👉 ✔️ performant
-👉 ✔️ thread-safe</p>
+performant
+thread-safe</p>
 <hr />
 <h2 id="6-meilleure-version-recommandee">💎 6. Meilleure version (recommandée)<a class="headerlink" href="#6-meilleure-version-recommandee" title="Permanent link">&para;</a></h2>
 <h3 id="singleton-avec-enum">Singleton avec <code>enum</code><a class="headerlink" href="#singleton-avec-enum" title="Permanent link">&para;</a></h3>
@@ -1922,14 +1922,14 @@ public static Singleton getInstance() {
 enum Singleton {
     INSTANCE;
 }</code></p>
-<p>👉 Avantages :</p>
+<p>Avantages :</p>
 <ul>
 <li>thread-safe automatiquement</li>
 <li>protège contre la sérialisation</li>
 <li>protège contre la réflexion</li>
 </ul>
 <hr />
-<h2 id="7-quand-utiliser">🧠 7. Quand utiliser ?<a class="headerlink" href="#7-quand-utiliser" title="Permanent link">&para;</a></h2>
+<h2 id="7-quand-utiliser">7. Quand utiliser ?<a class="headerlink" href="#7-quand-utiliser" title="Permanent link">&para;</a></h2>
 <ul>
 <li>configuration globale</li>
 <li>logger</li>
@@ -1937,14 +1937,14 @@ enum Singleton {
 <li>connexion unique</li>
 </ul>
 <hr />
-<h2 id="8-pieges-frequents">⚠️ 8. Pièges fréquents<a class="headerlink" href="#8-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="8-pieges-frequents">8. Pièges fréquents<a class="headerlink" href="#8-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>singleton global = couplage ❌</li>
-<li>difficile à tester ❌</li>
-<li>abus de singleton ❌</li>
+<li>singleton global = couplage</li>
+<li>difficile à tester</li>
+<li>abus de singleton</li>
 </ul>
 <hr />
-<h2 id="9-singleton-vs-di">🔄 9. Singleton vs DI<a class="headerlink" href="#9-singleton-vs-di" title="Permanent link">&para;</a></h2>
+<h2 id="9-singleton-vs-di">9. Singleton vs DI<a class="headerlink" href="#9-singleton-vs-di" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1972,20 +1972,20 @@ enum Singleton {
 </tbody>
 </table>
 <hr />
-<h2 id="10-questions-classiques">🧪 10. Questions classiques<a class="headerlink" href="#10-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="10-questions-classiques">10. Questions classiques<a class="headerlink" href="#10-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 objectif du Singleton ?
-👉 ✔️ une seule instance</p>
+<p>objectif du Singleton ?
+une seule instance</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 problème principal ?
-👉 ✔️ thread-safety</p>
+<p>problème principal ?
+thread-safety</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 meilleure implémentation ?
-👉 ✔️ enum</p>
+<p>meilleure implémentation ?
+enum</p>
 <hr />
-<h2 id="11-a-retenir">🧠 11. À retenir<a class="headerlink" href="#11-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="11-a-retenir">11. À retenir<a class="headerlink" href="#11-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Singleton = instance unique</li>
 <li>attention au multi-thread</li>
@@ -2000,7 +2000,7 @@ enum Singleton {
 <li>nécessite une implémentation correcte</li>
 <li>peut créer du couplage</li>
 </ul>
-<p>👉 Le Singleton est puissant, mais doit être utilisé avec précaution.</p>
+<p>Le Singleton est puissant, mais doit être utilisé avec précaution.</p>
 
 
 

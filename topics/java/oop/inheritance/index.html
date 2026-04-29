@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-heritage-de-classe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Héritage de classe
+        2. Héritage de classe
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#regle-importante" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Règle importante
+        Règle importante
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#3-interfaces-heritage-multiple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 3. Interfaces (héritage multiple)
+        3. Interfaces (héritage multiple)
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#4-classe-interface" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 4. Classe + Interface
+        4. Classe + Interface
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#5-pourquoi-cette-regle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 5. Pourquoi cette règle ?
+        5. Pourquoi cette règle ?
       
     </span>
   </a>
@@ -1715,7 +1715,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1726,12 +1726,12 @@
   <a href="#6-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 6. Questions classiques
+        6. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 6. Questions classiques">
+    <nav class="md-nav" aria-label="6. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1776,7 +1776,7 @@
   <a href="#7-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 7. À retenir
+        7. À retenir
       
     </span>
   </a>
@@ -1814,11 +1814,11 @@
 <h1 id="java-heritage-inheritance">Java — Héritage (Inheritance)<a class="headerlink" href="#java-heritage-inheritance" title="Permanent link">&para;</a></h1>
 <p>L’<strong>héritage</strong> est un pilier de la programmation orientée objet. Il permet à une classe de réutiliser et d’étendre le comportement d’une autre.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 Une classe peut <strong>hériter</strong> d’une autre</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p>Une classe peut <strong>hériter</strong> d’une autre</p>
 <p>➡️ elle récupère ses attributs et méthodes</p>
 <hr />
-<h2 id="2-heritage-de-classe">🧩 2. Héritage de classe<a class="headerlink" href="#2-heritage-de-classe" title="Permanent link">&para;</a></h2>
+<h2 id="2-heritage-de-classe">2. Héritage de classe<a class="headerlink" href="#2-heritage-de-classe" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">speak</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Animal sound&quot;</span><span class="p">);</span>
@@ -1831,10 +1831,10 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 <code>Dog</code> hérite de <code>Animal</code></p>
+<p><code>Dog</code> hérite de <code>Animal</code></p>
 <hr />
-<h2 id="regle-importante">⚠️ Règle importante<a class="headerlink" href="#regle-importante" title="Permanent link">&para;</a></h2>
-<p>👉 Java n’autorise <strong>qu’un seul héritage de classe</strong></p>
+<h2 id="regle-importante">Règle importante<a class="headerlink" href="#regle-importante" title="Permanent link">&para;</a></h2>
+<p>Java n’autorise <strong>qu’un seul héritage de classe</strong></p>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">A</span><span class="w"> </span><span class="p">{}</span>
 <span class="kd">class</span> <span class="nc">B</span><span class="w"> </span><span class="p">{}</span>
 
@@ -1842,8 +1842,8 @@
 <span class="kd">class</span> <span class="nc">C</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div>
 <hr />
-<h2 id="3-interfaces-heritage-multiple">🧠 3. Interfaces (héritage multiple)<a class="headerlink" href="#3-interfaces-heritage-multiple" title="Permanent link">&para;</a></h2>
-<p>👉 Une classe peut implémenter <strong>plusieurs interfaces</strong></p>
+<h2 id="3-interfaces-heritage-multiple">3. Interfaces (héritage multiple)<a class="headerlink" href="#3-interfaces-heritage-multiple" title="Permanent link">&para;</a></h2>
+<p>Une classe peut implémenter <strong>plusieurs interfaces</strong></p>
 <div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">Flyable</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">fly</span><span class="p">();</span>
 <span class="p">}</span>
@@ -1857,10 +1857,10 @@
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">swim</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 ✔️ héritage multiple possible avec interfaces</p>
+<p>héritage multiple possible avec interfaces</p>
 <hr />
-<h2 id="4-classe-interface">🧩 4. Classe + Interface<a class="headerlink" href="#4-classe-interface" title="Permanent link">&para;</a></h2>
-<p>👉 Une classe peut :</p>
+<h2 id="4-classe-interface">4. Classe + Interface<a class="headerlink" href="#4-classe-interface" title="Permanent link">&para;</a></h2>
+<p>Une classe peut :</p>
 <ul>
 <li>hériter d’une classe</li>
 <li>implémenter des interfaces</li>
@@ -1873,37 +1873,37 @@
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 ✔️ combinaison très courante</p>
+<p>combinaison très courante</p>
 <hr />
-<h2 id="5-pourquoi-cette-regle">🧠 5. Pourquoi cette règle ?<a class="headerlink" href="#5-pourquoi-cette-regle" title="Permanent link">&para;</a></h2>
-<p>👉 Java interdit héritage multiple de classes pour éviter :</p>
+<h2 id="5-pourquoi-cette-regle">5. Pourquoi cette règle ?<a class="headerlink" href="#5-pourquoi-cette-regle" title="Permanent link">&para;</a></h2>
+<p>Java interdit héritage multiple de classes pour éviter :</p>
 <ul>
 <li>conflits de méthodes</li>
 <li>ambiguïtés (diamond problem)</li>
 </ul>
-<p>👉 les interfaces sont plus sûres</p>
+<p>les interfaces sont plus sûres</p>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire qu’on peut hériter de plusieurs classes ❌</li>
-<li>oublier <code>implements</code> pour interface ❌</li>
-<li>confusion entre <code>extends</code> et <code>implements</code> ❌</li>
+<li>croire qu’on peut hériter de plusieurs classes</li>
+<li>oublier <code>implements</code> pour interface</li>
+<li>confusion entre <code>extends</code> et <code>implements</code></li>
 </ul>
 <hr />
-<h2 id="6-questions-classiques">🧪 6. Questions classiques<a class="headerlink" href="#6-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="6-questions-classiques">6. Questions classiques<a class="headerlink" href="#6-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 Java supporte héritage multiple de classes ?
-👉 ❌ Non</p>
+<p>Java supporte héritage multiple de classes ?
+Non</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 plusieurs interfaces possibles ?
-👉 ✔️ Oui</p>
+<p>plusieurs interfaces possibles ?
+Oui</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 classe + interface possible ?
-👉 ✔️ Oui</p>
+<p>classe + interface possible ?
+Oui</p>
 <hr />
-<h2 id="7-a-retenir">🧠 7. À retenir<a class="headerlink" href="#7-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="7-a-retenir">7. À retenir<a class="headerlink" href="#7-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>1 seule classe (extends)</li>
 <li>plusieurs interfaces (implements)</li>
@@ -1916,7 +1916,7 @@
 <li>Java limite l’héritage de classes</li>
 <li>interfaces offrent de la flexibilité</li>
 </ul>
-<p>👉 C’est une base essentielle pour comprendre la POO en Java.</p>
+<p>C’est une base essentielle pour comprendre la POO en Java.</p>
 
 
 

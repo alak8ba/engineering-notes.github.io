@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-exemple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Exemple
+        2. Exemple
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#6-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 6. Pièges fréquents
+        6. Pièges fréquents
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#7-alternative-moderne" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 7. Alternative moderne
+        7. Alternative moderne
       
     </span>
   </a>
@@ -1693,12 +1693,12 @@
   <a href="#8-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 8. Questions classiques
+        8. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 8. Questions classiques">
+    <nav class="md-nav" aria-label="8. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1743,7 +1743,7 @@
   <a href="#9-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 9. À retenir
+        9. À retenir
       
     </span>
   </a>
@@ -1781,14 +1781,14 @@
 <h1 id="java-hashtable-collection-synchronisee">Java — Hashtable (Collection synchronisée)<a class="headerlink" href="#java-hashtable-collection-synchronisee" title="Permanent link">&para;</a></h1>
 <p><code>Hashtable</code> est une ancienne implémentation de <code>Map</code> en Java. Elle est aujourd’hui moins utilisée, mais reste importante à connaître.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 <code>Hashtable</code> est :</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p><code>Hashtable</code> est :</p>
 <ul>
 <li>une structure clé → valeur (<code>Map</code>)</li>
 <li><strong>thread-safe (synchronisée)</strong></li>
 </ul>
 <hr />
-<h2 id="2-exemple">🧩 2. Exemple<a class="headerlink" href="#2-exemple" title="Permanent link">&para;</a></h2>
+<h2 id="2-exemple">2. Exemple<a class="headerlink" href="#2-exemple" title="Permanent link">&para;</a></h2>
 <p>```java id="k4p9xm"
 Hashtable<String, Integer> table = new Hashtable&lt;&gt;();</p>
 <p>table.put("A", 1);
@@ -1796,7 +1796,7 @@ table.put("B", 2);</p>
 <p>System.out.println(table.get("A")); // 1
 <div class="highlight"><pre><span></span><code>---
 
-## ⚠️ 3. Caractéristiques
+## 3. Caractéristiques
 
 * ✔️ synchronisée (thread-safe)
 * ❌ plus lente
@@ -1804,7 +1804,7 @@ table.put("B", 2);</p>
 
 ---
 
-## ⚠️ 4. Différence avec HashMap
+## 4. Différence avec HashMap
 
 | Feature        | Hashtable   | HashMap     |
 | -------------- | ----------- | ----------- |
@@ -1814,51 +1814,51 @@ table.put("B", 2);</p>
 
 ---
 
-## 🧠 5. Pourquoi plus lente ?
+## 5. Pourquoi plus lente ?
 
-👉 toutes les méthodes sont synchronisées :
+toutes les méthodes sont synchronisées :
 
 ```java id=&quot;j8d2lo&quot;
 public synchronized V put(K key, V value)
 </code></pre></div></p>
-<p>👉 donc :</p>
+<p>donc :</p>
 <ul>
 <li>lock global</li>
 <li>forte contention</li>
 </ul>
 <hr />
-<h2 id="6-pieges-frequents">⚠️ 6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="6-pieges-frequents">6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>penser que Hashtable est moderne ❌</li>
-<li>utiliser au lieu de ConcurrentHashMap ❌</li>
-<li>oublier que <code>null</code> est interdit ❌</li>
+<li>penser que Hashtable est moderne</li>
+<li>utiliser au lieu de ConcurrentHashMap</li>
+<li>oublier que <code>null</code> est interdit</li>
 </ul>
 <hr />
-<h2 id="7-alternative-moderne">🔥 7. Alternative moderne<a class="headerlink" href="#7-alternative-moderne" title="Permanent link">&para;</a></h2>
-<p>👉 préférer :</p>
+<h2 id="7-alternative-moderne">7. Alternative moderne<a class="headerlink" href="#7-alternative-moderne" title="Permanent link">&para;</a></h2>
+<p>préférer :</p>
 <p><code>java id="x2q9ws"
 ConcurrentHashMap&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();</code></p>
-<p>👉 avantages :</p>
+<p>avantages :</p>
 <ul>
 <li>thread-safe</li>
 <li>meilleure performance</li>
 <li>lock fin (granulaire)</li>
 </ul>
 <hr />
-<h2 id="8-questions-classiques">🧪 8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="8-questions-classiques">8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 Hashtable est thread-safe ?
-👉 ✔️ Oui</p>
+<p>Hashtable est thread-safe ?
+Oui</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 accepte null ?
-👉 ❌ Non</p>
+<p>accepte null ?
+Non</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 pourquoi peu utilisé aujourd’hui ?
-👉 ✔️ trop lent</p>
+<p>pourquoi peu utilisé aujourd’hui ?
+trop lent</p>
 <hr />
-<h2 id="9-a-retenir">🧠 9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="9-a-retenir">9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Hashtable = ancienne version synchronisée</li>
 <li>performance faible</li>
@@ -1872,7 +1872,7 @@ ConcurrentHashMap&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();<
 <li>pas de <code>null</code></li>
 <li>obsolète dans la plupart des cas</li>
 </ul>
-<p>👉 Aujourd’hui, on préfère des solutions plus performantes comme <code>ConcurrentHashMap</code>.</p>
+<p>Aujourd’hui, on préfère des solutions plus performantes comme <code>ConcurrentHashMap</code>.</p>
 
 
 

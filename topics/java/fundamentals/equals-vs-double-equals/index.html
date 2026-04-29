@@ -1646,10 +1646,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#idee-simple" class="md-nav__link">
+  <a href="#principe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Principe
       
     </span>
   </a>
@@ -1657,10 +1657,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemple-simple" class="md-nav__link">
+  <a href="#exemple-de-base" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple simple
+        Exemple de base
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#exemple-piegeux" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Exemple piégeux
+        Exemple piégeux
       
     </span>
   </a>
@@ -1679,49 +1679,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualisation-mentale" class="md-nav__link">
+  <a href="#objets-metier-sans-equals-redefini" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Visualisation mentale
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧠 Visualisation mentale">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ==
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#equals" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        equals()
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cas-avec-un-objet-metier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧩 Cas avec un objet métier
+        Objets métier sans equals() redéfini
       
     </span>
   </a>
@@ -1729,10 +1690,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#corriger-avec-equals" class="md-nav__link">
+  <a href="#override-de-equals-et-hashcode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔧 Corriger avec equals()
+        Override de equals() et hashCode()
       
     </span>
   </a>
@@ -1740,10 +1701,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pourquoi-hashcode-est-important" class="md-nav__link">
+  <a href="#pourquoi-hashcode-est-obligatoire" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pourquoi hashCode() est important
+        Pourquoi hashCode() est obligatoire
       
     </span>
   </a>
@@ -1754,7 +1715,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1765,12 +1726,12 @@
   <a href="#questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Questions classiques
+        Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 Questions classiques">
+    <nav class="md-nav" aria-label="Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1837,29 +1798,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#en-resume" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💬 En résumé
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pourquoi-cest-important" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Pourquoi c’est important
+        À retenir
       
     </span>
   </a>
@@ -1884,59 +1823,40 @@
 
 
 <h1 id="java-vs-equals">Java — <code>==</code> vs <code>equals()</code><a class="headerlink" href="#java-vs-equals" title="Permanent link">&para;</a></h1>
-<p>Comprendre la différence entre <code>==</code> et <code>equals()</code> est essentiel en Java. C’est un concept fondamental qui évite beaucoup d’erreurs, surtout quand on manipule des objets.</p>
-<hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="principe">Principe<a class="headerlink" href="#principe" title="Permanent link">&para;</a></h2>
 <p>En Java :</p>
 <ul>
-<li><code>==</code> compare <strong>si deux variables pointent vers le même objet</strong></li>
-<li><code>equals()</code> compare <strong>si deux objets sont égaux en valeur</strong></li>
-</ul>
-<p>👉 En résumé :</p>
-<ul>
-<li><code>==</code> → identité (même objet en mémoire)</li>
-<li><code>equals()</code> → égalité logique (même contenu)</li>
+<li><code>==</code> compare les <strong>références</strong> — est-ce le même objet en mémoire ?</li>
+<li><code>equals()</code> compare l'<strong>égalité logique</strong> — est-ce la même valeur ?</li>
 </ul>
 <hr />
-<h2 id="exemple-simple">🧩 Exemple simple<a class="headerlink" href="#exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-de-base">Exemple de base<a class="headerlink" href="#exemple-de-base" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span>
 <span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">      </span><span class="c1">// true</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">b</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
-<p>👉 Ici, les deux résultats sont <code>true</code>, mais pour des raisons différentes :</p>
+<p>Les deux sont <code>true</code>, mais pour des raisons différentes :</p>
 <ul>
-<li><code>==</code> est vrai grâce au <strong>String Pool</strong> (Java réutilise la même instance)</li>
-<li><code>equals()</code> est vrai car le contenu est identique</li>
+<li><code>==</code> est <code>true</code> à cause du <strong>String Pool</strong> — Java réutilise la même instance</li>
+<li><code>equals()</code> est <code>true</code> car le contenu est identique</li>
 </ul>
 <hr />
-<h2 id="exemple-piegeux">⚠️ Exemple piégeux<a class="headerlink" href="#exemple-piegeux" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-piegeux">Exemple piégeux<a class="headerlink" href="#exemple-piegeux" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">      </span><span class="c1">// false</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">b</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
-<p>👉 Pourquoi ?</p>
+<p><code>new String(...)</code> crée deux objets distincts en mémoire :</p>
 <ul>
-<li><code>new String(...)</code> crée <strong>deux objets différents</strong></li>
-<li>
-<p>donc :</p>
-<ul>
-<li><code>==</code> → false (références différentes)</li>
-<li><code>equals()</code> → true (contenu identique)</li>
-</ul>
-</li>
+<li><code>==</code> → <code>false</code> (références différentes)</li>
+<li><code>equals()</code> → <code>true</code> (contenu identique)</li>
 </ul>
 <hr />
-<h2 id="visualisation-mentale">🧠 Visualisation mentale<a class="headerlink" href="#visualisation-mentale" title="Permanent link">&para;</a></h2>
-<h3 id="_1"><code>==</code><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>👉 “Est-ce que c’est exactement le même objet en mémoire ?”</p>
-<h3 id="equals"><code>equals()</code><a class="headerlink" href="#equals" title="Permanent link">&para;</a></h3>
-<p>👉 “Est-ce que ces objets représentent la même valeur ?”</p>
-<hr />
-<h2 id="cas-avec-un-objet-metier">🧩 Cas avec un objet métier<a class="headerlink" href="#cas-avec-un-objet-metier" title="Permanent link">&para;</a></h2>
+<h2 id="objets-metier-sans-equals-redefini">Objets métier sans <code>equals()</code> redéfini<a class="headerlink" href="#objets-metier-sans-equals-redefini" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 
@@ -1951,10 +1871,10 @@
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">u1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">u2</span><span class="p">);</span><span class="w">      </span><span class="c1">// false</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">u2</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
 </code></pre></div>
-<p>👉 Pourquoi <code>equals()</code> est aussi <code>false</code> ?</p>
-<p>Parce que par défaut, Java utilise <code>Object.equals()</code>, qui compare comme <code>==</code>.</p>
+<p>Par défaut, Java hérite de <code>Object.equals()</code>, qui compare comme <code>==</code>.</p>
+<p>Pour une égalité de contenu, il faut redéfinir <code>equals()</code>.</p>
 <hr />
-<h2 id="corriger-avec-equals">🔧 Corriger avec <code>equals()</code><a class="headerlink" href="#corriger-avec-equals" title="Permanent link">&para;</a></h2>
+<h2 id="override-de-equals-et-hashcode">Override de <code>equals()</code> et <code>hashCode()</code><a class="headerlink" href="#override-de-equals-et-hashcode" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Objects</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
@@ -1978,7 +1898,6 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 Maintenant :</p>
 <div class="highlight"><pre><span></span><code><span class="n">User</span><span class="w"> </span><span class="n">u1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">(</span><span class="s">&quot;Ali&quot;</span><span class="p">);</span>
 <span class="n">User</span><span class="w"> </span><span class="n">u2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">(</span><span class="s">&quot;Ali&quot;</span><span class="p">);</span>
 
@@ -1986,89 +1905,66 @@
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">u2</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
 <hr />
-<h2 id="pourquoi-hashcode-est-important">⚠️ Pourquoi <code>hashCode()</code> est important<a class="headerlink" href="#pourquoi-hashcode-est-important" title="Permanent link">&para;</a></h2>
+<h2 id="pourquoi-hashcode-est-obligatoire">Pourquoi <code>hashCode()</code> est obligatoire<a class="headerlink" href="#pourquoi-hashcode-est-obligatoire" title="Permanent link">&para;</a></h2>
 <p>Quand on redéfinit <code>equals()</code>, il faut aussi redéfinir <code>hashCode()</code>.</p>
-<p>👉 Pourquoi ?</p>
-<p>Des structures comme :</p>
-<ul>
-<li><code>HashMap</code></li>
-<li><code>HashSet</code></li>
-</ul>
-<p>utilisent <code>hashCode()</code> pour fonctionner correctement.</p>
-<p>📌 Règle importante :</p>
+<p>Les structures comme <code>HashMap</code> et <code>HashSet</code> utilisent <code>hashCode()</code> pour organiser les objets.</p>
+<p>Règle :</p>
 <blockquote>
-<p>Si deux objets sont égaux avec <code>equals()</code>, ils doivent avoir le même <code>hashCode()</code></p>
+<p>si deux objets sont égaux avec <code>equals()</code>, ils doivent avoir le même <code>hashCode()</code></p>
 </blockquote>
+<p>Ne pas respecter cette règle produit des bugs difficiles à détecter dans les collections.</p>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire que <code>==</code> compare le contenu ❌</li>
-<li>croire que <code>equals()</code> compare toujours le contenu ❌</li>
-<li>oublier <code>hashCode()</code> ❌</li>
-<li>se faire tromper par le String Pool ⚠️</li>
+<li>croire que <code>==</code> compare le contenu</li>
+<li>croire que <code>equals()</code> compare toujours le contenu (seulement si redéfini)</li>
+<li>oublier <code>hashCode()</code> après un override de <code>equals()</code></li>
+<li>se laisser tromper par le String Pool avec <code>==</code></li>
 </ul>
 <hr />
-<h2 id="questions-classiques">🧪 Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="questions-classiques">Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;test&quot;</span><span class="p">;</span>
 <span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;test&quot;</span><span class="p">;</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ✔️ true (String Pool)</p>
+<p><code>true</code> — String Pool, même instance.</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ❌ false (objets différents)</p>
+<p><code>false</code> — deux objets distincts.</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
 </code></pre></div>
-<p>👉 ✔️ true (même contenu)</p>
+<p><code>true</code> — même contenu.</p>
 <hr />
 <h3 id="q4">Q4<a class="headerlink" href="#q4" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ✔️ true (cache entre -128 et 127)</p>
+<p><code>true</code> — cache <code>Integer</code> entre <code>-128</code> et <code>127</code>.</p>
 <hr />
 <h3 id="q5">Q5<a class="headerlink" href="#q5" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ❌ false (hors cache)</p>
+<p><code>false</code> — hors cache, deux objets distincts.</p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>==</code> compare les références (identité)</li>
-<li><code>equals()</code> compare le contenu (logique)</li>
-<li>
-<p>pour les objets personnalisés :</p>
-<ul>
-<li>il faut redéfinir <code>equals()</code></li>
-<li>et aussi <code>hashCode()</code></li>
+<li><code>==</code> → identité (même référence en mémoire)</li>
+<li><code>equals()</code> → égalité logique (même valeur)</li>
+<li>pour les objets personnalisés : redéfinir <code>equals()</code> <strong>et</strong> <code>hashCode()</code></li>
+<li><code>String</code>, <code>Integer</code> et les wrappers ont un comportement particulier à connaître</li>
 </ul>
-</li>
-</ul>
-<hr />
-<h2 id="en-resume">💬 En résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h2>
-<p>👉 “<code>==</code> compare si deux références pointent vers le même objet, tandis que <code>equals()</code> compare leur valeur logique.”</p>
-<hr />
-<h2 id="pourquoi-cest-important">🎯 Pourquoi c’est important<a class="headerlink" href="#pourquoi-cest-important" title="Permanent link">&para;</a></h2>
-<p>Bien comprendre cette différence permet de :</p>
-<ul>
-<li>éviter des bugs subtils</li>
-<li>utiliser correctement les collections</li>
-<li>écrire du code plus fiable</li>
-</ul>
-<hr />
-<p>Ce concept est simple en apparence, mais il est au cœur de beaucoup de comportements en Java.</p>
 
 
 

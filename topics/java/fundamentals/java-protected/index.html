@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-comparaison-rapide-des-acces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Comparaison rapide des accès
+        2. Comparaison rapide des accès
       
     </span>
   </a>
@@ -1671,12 +1671,12 @@
   <a href="#3-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 3. Exemple simple
+        3. Exemple simple
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 3. Exemple simple">
+    <nav class="md-nav" aria-label="3. Exemple simple">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1699,7 +1699,7 @@
   <a href="#regle-importante" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Règle importante
+        Règle importante
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#4-intuition-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 4. Intuition simple
+        4. Intuition simple
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1732,12 +1732,12 @@
   <a href="#5-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 5. Questions classiques
+        5. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 5. Questions classiques">
+    <nav class="md-nav" aria-label="5. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1782,7 +1782,7 @@
   <a href="#6-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 6. À retenir
+        6. À retenir
       
     </span>
   </a>
@@ -1820,16 +1820,16 @@
 <h1 id="java-protected-comprendre-lacces">Java — <code>protected</code> (Comprendre l’accès)<a class="headerlink" href="#java-protected-comprendre-lacces" title="Permanent link">&para;</a></h1>
 <p>Le mot-clé <code>protected</code> en Java est un niveau d’accès intermédiaire, souvent mal compris mais très important pour la conception orientée objet.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
 <p><code>protected</code> signifie :</p>
-<p>👉 accessible :</p>
+<p>accessible :</p>
 <ul>
 <li>dans la même classe</li>
 <li>dans le même package</li>
 <li>dans les sous-classes (même dans un autre package)</li>
 </ul>
 <hr />
-<h2 id="2-comparaison-rapide-des-acces">🧩 2. Comparaison rapide des accès<a class="headerlink" href="#2-comparaison-rapide-des-acces" title="Permanent link">&para;</a></h2>
+<h2 id="2-comparaison-rapide-des-acces">2. Comparaison rapide des accès<a class="headerlink" href="#2-comparaison-rapide-des-acces" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1872,7 +1872,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="3-exemple-simple">🧩 3. Exemple simple<a class="headerlink" href="#3-exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="3-exemple-simple">3. Exemple simple<a class="headerlink" href="#3-exemple-simple" title="Permanent link">&para;</a></h2>
 <p>```java id="l8z3mq"
 package a;</p>
 <p>public class Parent {
@@ -1904,7 +1904,7 @@ package b;</p>
 }
 <div class="highlight"><pre><span></span><code>---
 
-### ⚠️ Cas interdit
+### Cas interdit
 
 ```java id=&quot;c8f2yo&quot;
 package b;
@@ -1918,20 +1918,20 @@ public class Test {
     }
 }
 </code></pre></div></p>
-<p>👉 Ici :</p>
+<p>Ici :</p>
 <ul>
 <li>pas dans le même package</li>
 <li>pas une sous-classe</li>
 </ul>
 <hr />
-<h2 id="regle-importante">⚠️ Règle importante<a class="headerlink" href="#regle-importante" title="Permanent link">&para;</a></h2>
-<p>👉 Dans un autre package :</p>
+<h2 id="regle-importante">Règle importante<a class="headerlink" href="#regle-importante" title="Permanent link">&para;</a></h2>
+<p>Dans un autre package :</p>
 <ul>
 <li>✔️ accessible via héritage</li>
 <li>❌ pas accessible via une instance</li>
 </ul>
 <hr />
-<h2 id="4-intuition-simple">🧠 4. Intuition simple<a class="headerlink" href="#4-intuition-simple" title="Permanent link">&para;</a></h2>
+<h2 id="4-intuition-simple">4. Intuition simple<a class="headerlink" href="#4-intuition-simple" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>private</code> → moi uniquement</li>
 <li><code>default</code> → mon package</li>
@@ -1939,27 +1939,27 @@ public class Test {
 <li><code>public</code> → tout le monde</li>
 </ul>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire que <code>protected</code> = public ❌</li>
-<li>oublier la règle du package ❌</li>
-<li>penser que toutes les classes peuvent y accéder ❌</li>
+<li>croire que <code>protected</code> = public</li>
+<li>oublier la règle du package</li>
+<li>penser que toutes les classes peuvent y accéder</li>
 </ul>
 <hr />
-<h2 id="5-questions-classiques">🧪 5. Questions classiques<a class="headerlink" href="#5-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="5-questions-classiques">5. Questions classiques<a class="headerlink" href="#5-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 <code>protected</code> est accessible où ?
-👉 ✔️ package + sous-classes</p>
+<p><code>protected</code> est accessible où ?
+package + sous-classes</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 accessible depuis autre package sans héritage ?
-👉 ❌ non</p>
+<p>accessible depuis autre package sans héritage ?
+non</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 accessible via instance dans autre package ?
-👉 ❌ non</p>
+<p>accessible via instance dans autre package ?
+non</p>
 <hr />
-<h2 id="6-a-retenir">🧠 6. À retenir<a class="headerlink" href="#6-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="6-a-retenir">6. À retenir<a class="headerlink" href="#6-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>protected</code> = compromis entre <code>default</code> et <code>public</code></li>
 <li>utile pour l’héritage</li>
@@ -1974,7 +1974,7 @@ public class Test {
 <li>inaccessible aux autres classes externes</li>
 <li>particulièrement utile en design orienté objet</li>
 </ul>
-<p>👉 <code>protected</code> est souvent utilisé pour exposer des éléments uniquement aux classes liées (héritage).</p>
+<p><code>protected</code> est souvent utilisé pour exposer des éléments uniquement aux classes liées (héritage).</p>
 
 
 

@@ -1649,7 +1649,7 @@
   <a href="#idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#cas-1-variable-primitive" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Cas 1 — Variable primitive
+        Cas 1 — Variable primitive
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#cas-2-objet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Cas 2 — Objet
+        Cas 2 — Objet
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#resume-mental" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Résumé mental
+        Résumé mental
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#piege-classique" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Piège classique
+        Piège classique
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#comment-rendre-un-objet-immuable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔒 Comment rendre un objet immuable ?
+        Comment rendre un objet immuable ?
       
     </span>
   </a>
@@ -1715,7 +1715,7 @@
   <a href="#exemple-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple important
+        Exemple important
       
     </span>
   </a>
@@ -1726,7 +1726,7 @@
   <a href="#cas-dune-methode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔧 Cas d’une méthode
+        Cas d’une méthode
       
     </span>
   </a>
@@ -1737,7 +1737,7 @@
   <a href="#cas-dune-classe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Cas d’une classe
+        Cas d’une classe
       
     </span>
   </a>
@@ -1748,7 +1748,7 @@
   <a href="#cas-dune-methode-final" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Cas d’une méthode final
+        Cas d’une méthode final
       
     </span>
   </a>
@@ -1759,7 +1759,7 @@
   <a href="#pourquoi-cest-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Pourquoi c’est important
+        Pourquoi c’est important
       
     </span>
   </a>
@@ -1770,7 +1770,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1781,12 +1781,12 @@
   <a href="#questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Questions classiques
+        Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 Questions classiques">
+    <nav class="md-nav" aria-label="Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1842,7 +1842,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
+        À retenir
       
     </span>
   </a>
@@ -1853,7 +1853,7 @@
   <a href="#en-resume" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💬 En résumé
+        En résumé
       
     </span>
   </a>
@@ -1880,50 +1880,60 @@
 <h1 id="java-final">Java — <code>final</code><a class="headerlink" href="#java-final" title="Permanent link">&para;</a></h1>
 <p>Le mot-clé <code>final</code> en Java est souvent mal compris. Pourtant, il est essentiel pour écrire du code plus fiable, plus lisible et éviter certaines erreurs fréquentes.</p>
 <hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="idee-simple">Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
 <p>Le mot-clé <code>final</code> signifie :</p>
-<p>👉 <strong>une variable ne peut plus être réassignée après son initialisation</strong></p>
-<p>⚠️ Mais attention :</p>
-<p>👉 <strong>cela ne veut PAS dire que l’objet est immuable</strong></p>
+<p><strong>une variable ne peut plus être réassignée après son initialisation</strong></p>
+<p>Mais attention :</p>
+<p><strong>cela ne veut PAS dire que l’objet est immuable</strong></p>
 <hr />
-<h2 id="cas-1-variable-primitive">🧩 Cas 1 — Variable primitive<a class="headerlink" href="#cas-1-variable-primitive" title="Permanent link">&para;</a></h2>
+<h2 id="cas-1-variable-primitive">Cas 1 — Variable primitive<a class="headerlink" href="#cas-1-variable-primitive" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 <span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// ❌ erreur de compilation</span>
 </code></pre></div>
-<p>✔️ Ici :</p>
 <ul>
-<li><code>x</code> ne peut plus changer</li>
+<li>
+<p>Ici :</p>
+</li>
+<li>
+<p><code>x</code> ne peut plus changer</p>
+</li>
 <li>sa valeur est définitivement fixée</li>
 </ul>
 <hr />
-<h2 id="cas-2-objet">🧩 Cas 2 — Objet<a class="headerlink" href="#cas-2-objet" title="Permanent link">&para;</a></h2>
+<h2 id="cas-2-objet">Cas 2 — Objet<a class="headerlink" href="#cas-2-objet" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// ✔️ OK</span>
 <span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w"> </span><span class="c1">// ❌ interdit</span>
 </code></pre></div>
-<p>✔️ Ce qu’il faut comprendre :</p>
 <ul>
-<li>on peut <strong>modifier le contenu de l’objet</strong></li>
+<li>
+<p>Ce qu’il faut comprendre :</p>
+</li>
+<li>
+<p>on peut <strong>modifier le contenu de l’objet</strong></p>
+</li>
 <li>mais on ne peut <strong>pas changer la référence</strong></li>
 </ul>
-<p>👉 En résumé :</p>
+<p>En résumé :</p>
 <ul>
 <li>✔️ modifier l’objet → autorisé</li>
 <li>❌ changer l’objet → interdit</li>
 </ul>
 <hr />
-<h2 id="resume-mental">🧠 Résumé mental<a class="headerlink" href="#resume-mental" title="Permanent link">&para;</a></h2>
+<h2 id="resume-mental">Résumé mental<a class="headerlink" href="#resume-mental" title="Permanent link">&para;</a></h2>
 <p>Quand on utilise <code>final</code> sur une variable objet :</p>
-<p>👉 “Je ne peux pas pointer vers un autre objet”
-👉 MAIS “je peux modifier l’objet lui-même”</p>
+<p>“Je ne peux pas pointer vers un autre objet”
+MAIS “je peux modifier l’objet lui-même”</p>
 <hr />
-<h2 id="piege-classique">⚠️ Piège classique<a class="headerlink" href="#piege-classique" title="Permanent link">&para;</a></h2>
+<h2 id="piege-classique">Piège classique<a class="headerlink" href="#piege-classique" title="Permanent link">&para;</a></h2>
 <p>Beaucoup pensent :</p>
-<p>👉 “final = immuable”</p>
-<p>❌ <strong>Faux</strong></p>
-<p>👉 <code>final</code> ≠ immutabilité</p>
+<p>“final = immuable”</p>
+<ul>
+<li><strong>Faux</strong></li>
+</ul>
+<p><code>final</code> ≠ immutabilité</p>
 <hr />
-<h2 id="comment-rendre-un-objet-immuable">🔒 Comment rendre un objet immuable ?<a class="headerlink" href="#comment-rendre-un-objet-immuable" title="Permanent link">&para;</a></h2>
+<h2 id="comment-rendre-un-objet-immuable">Comment rendre un objet immuable ?<a class="headerlink" href="#comment-rendre-un-objet-immuable" title="Permanent link">&para;</a></h2>
 <p>Pour créer un objet réellement immuable :</p>
 <ul>
 <li>pas de setters</li>
@@ -1931,46 +1941,46 @@
 <li>aucune modification interne</li>
 </ul>
 <hr />
-<h2 id="exemple-important">🧩 Exemple important<a class="headerlink" href="#exemple-important" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-important">Exemple important<a class="headerlink" href="#exemple-important" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">StringBuilder</span><span class="w"> </span><span class="n">sb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuilder</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
 <span class="n">sb</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot; world&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// ✔️ OK</span>
 </code></pre></div>
-<p>👉 Ici :</p>
+<p>Ici :</p>
 <ul>
 <li><code>sb</code> est final</li>
 <li>mais l’objet continue de changer</li>
 </ul>
 <hr />
-<h2 id="cas-dune-methode">🔧 Cas d’une méthode<a class="headerlink" href="#cas-dune-methode" title="Permanent link">&para;</a></h2>
+<h2 id="cas-dune-methode">Cas d’une méthode<a class="headerlink" href="#cas-dune-methode" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// ❌ interdit</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 Un paramètre <code>final</code> :</p>
+<p>Un paramètre <code>final</code> :</p>
 <ul>
 <li>ne peut pas être modifié dans la méthode</li>
 </ul>
 <hr />
-<h2 id="cas-dune-classe">🧩 Cas d’une classe<a class="headerlink" href="#cas-dune-classe" title="Permanent link">&para;</a></h2>
+<h2 id="cas-dune-classe">Cas d’une classe<a class="headerlink" href="#cas-dune-classe" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 Résultat :</p>
+<p>Résultat :</p>
 <ul>
 <li>impossible d’hériter de cette classe</li>
 </ul>
 <hr />
-<h2 id="cas-dune-methode-final">🧩 Cas d’une méthode <code>final</code><a class="headerlink" href="#cas-dune-methode-final" title="Permanent link">&para;</a></h2>
+<h2 id="cas-dune-methode-final">Cas d’une méthode <code>final</code><a class="headerlink" href="#cas-dune-methode-final" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">A</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">final</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">method</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 Résultat :</p>
+<p>Résultat :</p>
 <ul>
 <li>impossible de redéfinir (override) la méthode</li>
 </ul>
 <hr />
-<h2 id="pourquoi-cest-important">🧠 Pourquoi c’est important<a class="headerlink" href="#pourquoi-cest-important" title="Permanent link">&para;</a></h2>
+<h2 id="pourquoi-cest-important">Pourquoi c’est important<a class="headerlink" href="#pourquoi-cest-important" title="Permanent link">&para;</a></h2>
 <p>Dans des applications modernes (backend, systèmes concurrents, etc.) :</p>
 <p><code>final</code> permet de :</p>
 <ul>
@@ -1980,48 +1990,48 @@
 <li>améliorer (partiellement) la sécurité en concurrence</li>
 </ul>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire que <code>final</code> rend un objet immuable ❌</li>
-<li>oublier qu’on peut modifier l’objet ✔️</li>
+<li>croire que <code>final</code> rend un objet immuable</li>
+<li>oublier qu’on peut modifier l’objet</li>
 <li>confondre avec <code>const</code> (C/C++)</li>
 </ul>
 <hr />
-<h2 id="questions-classiques">🧪 Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="questions-classiques">Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 <span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 </code></pre></div>
-<p>👉 ❌ Erreur de compilation</p>
+<p>Erreur de compilation</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ✔️ OK</p>
+<p>OK</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 <span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 </code></pre></div>
-<p>👉 ❌ Erreur de compilation</p>
+<p>Erreur de compilation</p>
 <hr />
 <h3 id="q4">Q4<a class="headerlink" href="#q4" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">StringBuilder</span><span class="w"> </span><span class="n">sb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuilder</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">);</span>
 <span class="n">sb</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;b&quot;</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sb</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 ✔️ Affiche : <code>"ab"</code></p>
+<p>Affiche : <code>"ab"</code></p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>final</code> bloque la <strong>réassignation</strong></li>
 <li><code>final</code> ne garantit PAS l’immuabilité</li>
 <li>c’est un outil simple mais puissant pour écrire du code plus sûr</li>
 </ul>
 <hr />
-<h2 id="en-resume">💬 En résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h2>
-<p>👉 “<code>final</code> empêche de changer la référence, mais pas de modifier l’objet.”</p>
+<h2 id="en-resume">En résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h2>
+<p>“<code>final</code> empêche de changer la référence, mais pas de modifier l’objet.”</p>
 <hr />
 <p>Ce concept paraît simple, mais il fait souvent la différence entre un code fragile et un code robuste.</p>
 

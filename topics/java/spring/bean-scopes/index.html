@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,19 +1660,19 @@
   <a href="#2-singleton-par-defaut" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Singleton (par défaut)
+        2. Singleton (par défaut)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 2. Singleton (par défaut)">
+    <nav class="md-nav" aria-label="2. Singleton (par défaut)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#caracteristiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✔️ Caractéristiques
+        Caractéristiques
       
     </span>
   </a>
@@ -1688,7 +1688,7 @@
   <a href="#4-request-web" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 4. Request (web)
+        4. Request (web)
       
     </span>
   </a>
@@ -1699,7 +1699,7 @@
   <a href="#6-application" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 6. Application
+        6. Application
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#9-bonnes-pratiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 9. Bonnes pratiques
+        9. Bonnes pratiques
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1732,12 +1732,12 @@
   <a href="#10-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 10. Questions classiques
+        10. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 10. Questions classiques">
+    <nav class="md-nav" aria-label="10. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1782,7 +1782,7 @@
   <a href="#11-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 11. À retenir
+        11. À retenir
       
     </span>
   </a>
@@ -1820,20 +1820,20 @@
 <h1 id="spring-scope-des-beans-dependency-injection">Spring — Scope des beans (Dependency Injection)<a class="headerlink" href="#spring-scope-des-beans-dependency-injection" title="Permanent link">&para;</a></h1>
 <p>Dans le contexte de la DI (ex: Spring), le <strong>scope</strong> d’un bean définit <strong>son cycle de vie et son nombre d’instances</strong>.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 Le scope répond à la question :</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p>Le scope répond à la question :</p>
 <p>➡️ <strong>combien d’instances du bean sont créées ?</strong></p>
 <hr />
-<h2 id="2-singleton-par-defaut">🧩 2. Singleton (par défaut)<a class="headerlink" href="#2-singleton-par-defaut" title="Permanent link">&para;</a></h2>
+<h2 id="2-singleton-par-defaut">2. Singleton (par défaut)<a class="headerlink" href="#2-singleton-par-defaut" title="Permanent link">&para;</a></h2>
 <p>```java id="n8k2qp"
 @Component
 @Scope("singleton")
 class MyService {}
-<div class="highlight"><pre><span></span><code>👉 ✔️ une seule instance dans toute l’application
+<div class="highlight"><pre><span></span><code>une seule instance dans toute l’application
 
 ---
 
-### ✔️ Caractéristiques
+### Caractéristiques
 
 * partagé
 * performant
@@ -1841,44 +1841,44 @@ class MyService {}
 
 ---
 
-## 🧩 3. Prototype
+## 3. Prototype
 
 ```java id=&quot;x3m7rv&quot;
 @Component
 @Scope(&quot;prototype&quot;)
 class MyService {}
 </code></pre></div></p>
-<p>👉 ✔️ une nouvelle instance à chaque injection</p>
+<p>une nouvelle instance à chaque injection</p>
 <hr />
-<h3 id="caracteristiques">✔️ Caractéristiques<a class="headerlink" href="#caracteristiques" title="Permanent link">&para;</a></h3>
+<h3 id="caracteristiques">Caractéristiques<a class="headerlink" href="#caracteristiques" title="Permanent link">&para;</a></h3>
 <ul>
 <li>non partagé</li>
 <li>plus flexible</li>
 <li>plus coûteux</li>
 </ul>
 <hr />
-<h2 id="4-request-web">🧩 4. Request (web)<a class="headerlink" href="#4-request-web" title="Permanent link">&para;</a></h2>
+<h2 id="4-request-web">4. Request (web)<a class="headerlink" href="#4-request-web" title="Permanent link">&para;</a></h2>
 <p>```java id="z7p1kt"
 @Scope("request")
-<div class="highlight"><pre><span></span><code>👉 ✔️ une instance par requête HTTP
+<div class="highlight"><pre><span></span><code>une instance par requête HTTP
 
 ---
 
-## 🧩 5. Session (web)
+## 5. Session (web)
 
 ```java id=&quot;m4w9ds&quot;
 @Scope(&quot;session&quot;)
 </code></pre></div></p>
-<p>👉 ✔️ une instance par session utilisateur</p>
+<p>une instance par session utilisateur</p>
 <hr />
-<h2 id="6-application">🧩 6. Application<a class="headerlink" href="#6-application" title="Permanent link">&para;</a></h2>
+<h2 id="6-application">6. Application<a class="headerlink" href="#6-application" title="Permanent link">&para;</a></h2>
 <p>```java id="k2x8yo"
 @Scope("application")
-<div class="highlight"><pre><span></span><code>👉 ✔️ une instance pour toute l’application web
+<div class="highlight"><pre><span></span><code>une instance pour toute l’application web
 
 ---
 
-## 🔄 7. Résumé des scopes
+## 7. Résumé des scopes
 
 | Scope       | Instances                 |
 | ----------- | ------------------------- |
@@ -1890,9 +1890,9 @@ class MyService {}
 
 ---
 
-## ⚠️ 8. Piège important
+## 8. Piège important
 
-👉 Singleton + état mutable :
+Singleton + état mutable :
 
 ```java id=&quot;r8n3yt&quot;
 @Component
@@ -1900,40 +1900,40 @@ class Counter {
     int count = 0; // ❌ partagé entre threads
 }
 </code></pre></div></p>
-<p>👉 problème :</p>
+<p>problème :</p>
 <ul>
 <li>race condition</li>
 <li>bugs concurrents</li>
 </ul>
 <hr />
-<h2 id="9-bonnes-pratiques">🧠 9. Bonnes pratiques<a class="headerlink" href="#9-bonnes-pratiques" title="Permanent link">&para;</a></h2>
+<h2 id="9-bonnes-pratiques">9. Bonnes pratiques<a class="headerlink" href="#9-bonnes-pratiques" title="Permanent link">&para;</a></h2>
 <ul>
-<li>utiliser singleton pour services stateless ✔️</li>
-<li>éviter état mutable ✔️</li>
-<li>utiliser prototype si besoin d’instance unique ✔️</li>
+<li>utiliser singleton pour services stateless</li>
+<li>éviter état mutable</li>
+<li>utiliser prototype si besoin d’instance unique</li>
 </ul>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire que prototype est géré comme singleton ❌</li>
-<li>oublier la concurrence sur singleton ❌</li>
-<li>utiliser session/request hors web ❌</li>
+<li>croire que prototype est géré comme singleton</li>
+<li>oublier la concurrence sur singleton</li>
+<li>utiliser session/request hors web</li>
 </ul>
 <hr />
-<h2 id="10-questions-classiques">🧪 10. Questions classiques<a class="headerlink" href="#10-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="10-questions-classiques">10. Questions classiques<a class="headerlink" href="#10-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 scope par défaut ?
-👉 ✔️ singleton</p>
+<p>scope par défaut ?
+singleton</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 prototype = ?
-👉 ✔️ nouvelle instance</p>
+<p>prototype = ?
+nouvelle instance</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 danger du singleton ?
-👉 ✔️ concurrence</p>
+<p>danger du singleton ?
+concurrence</p>
 <hr />
-<h2 id="11-a-retenir">🧠 11. À retenir<a class="headerlink" href="#11-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="11-a-retenir">11. À retenir<a class="headerlink" href="#11-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>scope = cycle de vie</li>
 <li>singleton par défaut</li>
@@ -1946,7 +1946,7 @@ class Counter {
 <li>prototype → nouveau à chaque fois</li>
 <li>web scopes → dépend du contexte</li>
 </ul>
-<p>👉 Le choix du scope impacte directement la performance et la sécurité du code.</p>
+<p>Le choix du scope impacte directement la performance et la sécurité du code.</p>
 
 
 

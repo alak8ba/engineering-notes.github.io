@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Exemple simple
+        2. Exemple simple
       
     </span>
   </a>
@@ -1671,19 +1671,19 @@
   <a href="#3-types-de-polymorphisme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 3. Types de polymorphisme
+        3. Types de polymorphisme
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 3. Types de polymorphisme">
+    <nav class="md-nav" aria-label="3. Types de polymorphisme">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#polymorphisme-a-lexecution-override" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✔️ Polymorphisme à l’exécution (override)
+        Polymorphisme à l’exécution (override)
       
     </span>
   </a>
@@ -1694,7 +1694,7 @@
   <a href="#polymorphisme-a-la-compilation-overloading" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✔️ Polymorphisme à la compilation (overloading)
+        Polymorphisme à la compilation (overloading)
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#5-pourquoi-cest-utile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 5. Pourquoi c’est utile
+        5. Pourquoi c’est utile
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#6-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 6. Pièges fréquents
+        6. Pièges fréquents
       
     </span>
   </a>
@@ -1732,12 +1732,12 @@
   <a href="#7-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 7. Questions classiques
+        7. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 7. Questions classiques">
+    <nav class="md-nav" aria-label="7. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1782,7 +1782,7 @@
   <a href="#8-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 8. À retenir
+        8. À retenir
       
     </span>
   </a>
@@ -1820,11 +1820,11 @@
 <h1 id="java-polymorphisme-poo">Java — Polymorphisme (POO)<a class="headerlink" href="#java-polymorphisme-poo" title="Permanent link">&para;</a></h1>
 <p>Le <strong>polymorphisme</strong> est un des piliers de la programmation orientée objet (POO). Il permet d’utiliser une même interface pour manipuler différents types d’objets.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 <strong>une même méthode peut avoir plusieurs comportements</strong></p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p><strong>une même méthode peut avoir plusieurs comportements</strong></p>
 <p>➡️ selon l’objet utilisé</p>
 <hr />
-<h2 id="2-exemple-simple">🧩 2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="2-exemple-simple">2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
 <p>```java id="q8x2mk"
 class Animal {
     void speak() {
@@ -1852,25 +1852,25 @@ Animal a2 = new Cat();
 a1.speak(); // Bark
 a2.speak(); // Meow
 </code></pre></div></p>
-<p>👉 même méthode → comportement différent</p>
+<p>même méthode → comportement différent</p>
 <hr />
-<h2 id="3-types-de-polymorphisme">🧠 3. Types de polymorphisme<a class="headerlink" href="#3-types-de-polymorphisme" title="Permanent link">&para;</a></h2>
-<h3 id="polymorphisme-a-lexecution-override">✔️ Polymorphisme à l’exécution (override)<a class="headerlink" href="#polymorphisme-a-lexecution-override" title="Permanent link">&para;</a></h3>
-<p>👉 redéfinition de méthode dans une sous-classe</p>
+<h2 id="3-types-de-polymorphisme">3. Types de polymorphisme<a class="headerlink" href="#3-types-de-polymorphisme" title="Permanent link">&para;</a></h2>
+<h3 id="polymorphisme-a-lexecution-override">Polymorphisme à l’exécution (override)<a class="headerlink" href="#polymorphisme-a-lexecution-override" title="Permanent link">&para;</a></h3>
+<p>redéfinition de méthode dans une sous-classe</p>
 <hr />
-<h3 id="polymorphisme-a-la-compilation-overloading">✔️ Polymorphisme à la compilation (overloading)<a class="headerlink" href="#polymorphisme-a-la-compilation-overloading" title="Permanent link">&para;</a></h3>
+<h3 id="polymorphisme-a-la-compilation-overloading">Polymorphisme à la compilation (overloading)<a class="headerlink" href="#polymorphisme-a-la-compilation-overloading" title="Permanent link">&para;</a></h3>
 <p>```java id="b7r3sd"
 class MathUtils {
     int add(int a, int b) { return a + b; }
     double add(double a, double b) { return a + b; }
 }
-<div class="highlight"><pre><span></span><code>👉 même nom, paramètres différents
+<div class="highlight"><pre><span></span><code>même nom, paramètres différents
 
 ---
 
-## ⚠️ 4. Règle importante
+## 4. Règle importante
 
-👉 le type de la référence compte :
+le type de la référence compte :
 
 ```java id=&quot;m2k9yt&quot;
 Animal a = new Dog();
@@ -1879,9 +1879,9 @@ Animal a = new Dog();
 <li>type compilé : <code>Animal</code></li>
 <li>type réel : <code>Dog</code></li>
 </ul>
-<p>👉 Java appelle la méthode du type réel</p>
+<p>Java appelle la méthode du type réel</p>
 <hr />
-<h2 id="5-pourquoi-cest-utile">🧠 5. Pourquoi c’est utile<a class="headerlink" href="#5-pourquoi-cest-utile" title="Permanent link">&para;</a></h2>
+<h2 id="5-pourquoi-cest-utile">5. Pourquoi c’est utile<a class="headerlink" href="#5-pourquoi-cest-utile" title="Permanent link">&para;</a></h2>
 <ul>
 <li>code flexible</li>
 <li>extensible</li>
@@ -1889,27 +1889,27 @@ Animal a = new Dog();
 <li>meilleur design</li>
 </ul>
 <hr />
-<h2 id="6-pieges-frequents">⚠️ 6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="6-pieges-frequents">6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>confusion override vs overload ❌</li>
-<li>oublier le type réel ❌</li>
-<li>penser que tout est dynamique ❌</li>
+<li>confusion override vs overload</li>
+<li>oublier le type réel</li>
+<li>penser que tout est dynamique</li>
 </ul>
 <hr />
-<h2 id="7-questions-classiques">🧪 7. Questions classiques<a class="headerlink" href="#7-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="7-questions-classiques">7. Questions classiques<a class="headerlink" href="#7-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 polymorphisme = ?
-👉 ✔️ même méthode, comportements différents</p>
+<p>polymorphisme = ?
+même méthode, comportements différents</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 override ou overload ?
-👉 ✔️ override = runtime</p>
+<p>override ou overload ?
+override = runtime</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 méthode appelée dépend de quoi ?
-👉 ✔️ type réel</p>
+<p>méthode appelée dépend de quoi ?
+type réel</p>
 <hr />
-<h2 id="8-a-retenir">🧠 8. À retenir<a class="headerlink" href="#8-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="8-a-retenir">8. À retenir<a class="headerlink" href="#8-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>polymorphisme = flexibilité</li>
 <li>override → runtime</li>
@@ -1923,7 +1923,7 @@ Animal a = new Dog();
 <li>plusieurs implémentations</li>
 <li>comportement dynamique</li>
 </ul>
-<p>👉 Le polymorphisme permet d’écrire du code plus propre et évolutif.</p>
+<p>Le polymorphisme permet d’écrire du code plus propre et évolutif.</p>
 
 
 

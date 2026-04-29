@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-s-single-responsibility-principle-srp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. S — Single Responsibility Principle (SRP)
+        2. S — Single Responsibility Principle (SRP)
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#4-l-liskov-substitution-principle-lsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 4. L — Liskov Substitution Principle (LSP)
+        4. L — Liskov Substitution Principle (LSP)
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#6-d-dependency-inversion-principle-dip" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 6. D — Dependency Inversion Principle (DIP)
+        6. D — Dependency Inversion Principle (DIP)
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#7-resume" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔄 7. Résumé
+        7. Résumé
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#8-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 8. Pièges fréquents
+        8. Pièges fréquents
       
     </span>
   </a>
@@ -1715,12 +1715,12 @@
   <a href="#9-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 9. Questions classiques
+        9. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 9. Questions classiques">
+    <nav class="md-nav" aria-label="9. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1765,7 +1765,7 @@
   <a href="#10-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 10. À retenir
+        10. À retenir
       
     </span>
   </a>
@@ -1803,60 +1803,60 @@
 <h1 id="solid-principes-de-conception">SOLID — Principes de conception<a class="headerlink" href="#solid-principes-de-conception" title="Permanent link">&para;</a></h1>
 <p>Les principes <strong>SOLID</strong> sont 5 règles fondamentales pour écrire du code orienté objet <strong>propre, maintenable et évolutif</strong>.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
 <p>SOLID =</p>
-<p>👉 <strong>5 principes pour un bon design logiciel</strong></p>
+<p><strong>5 principes pour un bon design logiciel</strong></p>
 <hr />
-<h2 id="2-s-single-responsibility-principle-srp">🧩 2. S — Single Responsibility Principle (SRP)<a class="headerlink" href="#2-s-single-responsibility-principle-srp" title="Permanent link">&para;</a></h2>
-<p>👉 une classe = <strong>une seule responsabilité</strong></p>
+<h2 id="2-s-single-responsibility-principle-srp">2. S — Single Responsibility Principle (SRP)<a class="headerlink" href="#2-s-single-responsibility-principle-srp" title="Permanent link">&para;</a></h2>
+<p>une classe = <strong>une seule responsabilité</strong></p>
 <p>```java id="s1p3ex"
 class UserService {
     void createUser() {}
 }
-<div class="highlight"><pre><span></span><code>❌ Mauvais :
+<div class="highlight"><pre><span></span><code>- Mauvais :
 
 * gérer utilisateur + email + DB dans la même classe
 
 ---
 
-## 🧩 3. O — Open/Closed Principle (OCP)
+## 3. O — Open/Closed Principle (OCP)
 
-👉 **ouvert à l’extension, fermé à la modification**
+**ouvert à l’extension, fermé à la modification**
 
 ```java id=&quot;ocp2ex&quot;
 interface Payment {
     void pay();
 }
 </code></pre></div></p>
-<p>👉 on ajoute des classes sans modifier l’existant</p>
+<p>on ajoute des classes sans modifier l’existant</p>
 <hr />
-<h2 id="4-l-liskov-substitution-principle-lsp">🧩 4. L — Liskov Substitution Principle (LSP)<a class="headerlink" href="#4-l-liskov-substitution-principle-lsp" title="Permanent link">&para;</a></h2>
-<p>👉 une sous-classe doit pouvoir remplacer sa classe parent</p>
+<h2 id="4-l-liskov-substitution-principle-lsp">4. L — Liskov Substitution Principle (LSP)<a class="headerlink" href="#4-l-liskov-substitution-principle-lsp" title="Permanent link">&para;</a></h2>
+<p>une sous-classe doit pouvoir remplacer sa classe parent</p>
 <p>```java id="lsp3ex"
 Animal a = new Dog(); // ✔️ OK
-<div class="highlight"><pre><span></span><code>👉 comportement cohérent attendu
+<div class="highlight"><pre><span></span><code>comportement cohérent attendu
 
 ---
 
-## 🧩 5. I — Interface Segregation Principle (ISP)
+## 5. I — Interface Segregation Principle (ISP)
 
-👉 plusieurs petites interfaces &gt; une grosse
+plusieurs petites interfaces &gt; une grosse
 
 ```java id=&quot;isp4ex&quot;
 interface Flyable { void fly(); }
 interface Swimmable { void swim(); }
 </code></pre></div></p>
-<p>👉 évite les méthodes inutiles</p>
+<p>évite les méthodes inutiles</p>
 <hr />
-<h2 id="6-d-dependency-inversion-principle-dip">🧩 6. D — Dependency Inversion Principle (DIP)<a class="headerlink" href="#6-d-dependency-inversion-principle-dip" title="Permanent link">&para;</a></h2>
-<p>👉 dépendre d’abstractions, pas d’implémentations</p>
+<h2 id="6-d-dependency-inversion-principle-dip">6. D — Dependency Inversion Principle (DIP)<a class="headerlink" href="#6-d-dependency-inversion-principle-dip" title="Permanent link">&para;</a></h2>
+<p>dépendre d’abstractions, pas d’implémentations</p>
 <p><code>java id="dip5ex"
 class Service {
     private Repository repo;
 }</code></p>
-<p>👉 pas de <code>new</code> direct</p>
+<p>pas de <code>new</code> direct</p>
 <hr />
-<h2 id="7-resume">🔄 7. Résumé<a class="headerlink" href="#7-resume" title="Permanent link">&para;</a></h2>
+<h2 id="7-resume">7. Résumé<a class="headerlink" href="#7-resume" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1888,27 +1888,27 @@ class Service {
 </tbody>
 </table>
 <hr />
-<h2 id="8-pieges-frequents">⚠️ 8. Pièges fréquents<a class="headerlink" href="#8-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="8-pieges-frequents">8. Pièges fréquents<a class="headerlink" href="#8-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>classes trop grosses ❌</li>
-<li>dépendances directes ❌</li>
-<li>interfaces inutiles ❌</li>
+<li>classes trop grosses</li>
+<li>dépendances directes</li>
+<li>interfaces inutiles</li>
 </ul>
 <hr />
-<h2 id="9-questions-classiques">🧪 9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="9-questions-classiques">9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 SRP = ?
-👉 ✔️ une responsabilité</p>
+<p>SRP = ?
+une responsabilité</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 DIP = ?
-👉 ✔️ abstraction</p>
+<p>DIP = ?
+abstraction</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 OCP = ?
-👉 ✔️ extension sans modification</p>
+<p>OCP = ?
+extension sans modification</p>
 <hr />
-<h2 id="10-a-retenir">🧠 10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="10-a-retenir">10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>SOLID = base du clean code</li>
 <li>améliore testabilité</li>
@@ -1921,7 +1921,7 @@ class Service {
 <li>design plus propre</li>
 <li>code évolutif</li>
 </ul>
-<p>👉 SOLID est essentiel pour écrire du code professionnel.</p>
+<p>SOLID est essentiel pour écrire du code professionnel.</p>
 
 
 

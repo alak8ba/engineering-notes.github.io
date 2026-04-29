@@ -1649,7 +1649,7 @@
   <a href="#idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Idée simple
       
     </span>
   </a>
@@ -1672,7 +1672,7 @@
   <a href="#o1-constant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🟢 O(1) — Constant
+        O(1) — Constant
       
     </span>
   </a>
@@ -1699,7 +1699,7 @@
   <a href="#exemple-de-binary-search" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple de binary search
+        Exemple de binary search
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#exemples-concrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Exemples concrets
+        Exemples concrets
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#piege-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Piège important
+        Piège important
       
     </span>
   </a>
@@ -1732,7 +1732,7 @@
   <a href="#intuition-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Intuition simple
+        Intuition simple
       
     </span>
   </a>
@@ -1743,12 +1743,12 @@
   <a href="#questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Questions classiques
+        Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 Questions classiques">
+    <nav class="md-nav" aria-label="Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1804,7 +1804,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
+        À retenir
       
     </span>
   </a>
@@ -1842,36 +1842,36 @@
 <h1 id="algorithm-complexite-o1-on-olog-n">Algorithm — Complexité (O(1), O(n), O(log n))<a class="headerlink" href="#algorithm-complexite-o1-on-olog-n" title="Permanent link">&para;</a></h1>
 <p>La complexité est un concept fondamental pour comprendre la performance d’un programme, surtout quand on manipule beaucoup de données.</p>
 <hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="idee-simple">Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
 <p>La complexité mesure :</p>
-<p>👉 <strong>le temps nécessaire pour exécuter une opération en fonction de la taille des données</strong></p>
+<p><strong>le temps nécessaire pour exécuter une opération en fonction de la taille des données</strong></p>
 <hr />
 <h2 id="les-3-complexites-essentielles">⚡ Les 3 complexités essentielles<a class="headerlink" href="#les-3-complexites-essentielles" title="Permanent link">&para;</a></h2>
-<h3 id="o1-constant">🟢 O(1) — Constant<a class="headerlink" href="#o1-constant" title="Permanent link">&para;</a></h3>
-<p>👉 Temps fixe, peu importe la taille</p>
+<h3 id="o1-constant">O(1) — Constant<a class="headerlink" href="#o1-constant" title="Permanent link">&para;</a></h3>
+<p>Temps fixe, peu importe la taille</p>
 <p>```java id="kz9w2x"
 map.get(key);
-<div class="highlight"><pre><span></span><code>✔️ Très rapide
-✔️ Idéal pour les systèmes performants
+<div class="highlight"><pre><span></span><code>- Très rapide
+- Idéal pour les systèmes performants
 
 ---
 
-### 🟡 O(n) — Linéaire
+### O(n) — Linéaire
 
-👉 Temps proportionnel au nombre d’éléments
+Temps proportionnel au nombre d’éléments
 
 ```java id=&quot;v3m1pt&quot;
 for (int i = 0; i &lt; n; i++) {
     // traitement
 }
 </code></pre></div></p>
-<p>👉 Plus il y a de données, plus c’est lent</p>
+<p>Plus il y a de données, plus c’est lent</p>
 <hr />
 <h3 id="olog-n-logarithmique">🔵 O(log n) — Logarithmique<a class="headerlink" href="#olog-n-logarithmique" title="Permanent link">&para;</a></h3>
-<p>👉 Très efficace sur de grandes données</p>
-<p>👉 Exemple : <strong>recherche dichotomique (binary search)</strong></p>
+<p>Très efficace sur de grandes données</p>
+<p>Exemple : <strong>recherche dichotomique (binary search)</strong></p>
 <hr />
-<h2 id="exemple-de-binary-search">🧩 Exemple de binary search<a class="headerlink" href="#exemple-de-binary-search" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-de-binary-search">Exemple de binary search<a class="headerlink" href="#exemple-de-binary-search" title="Permanent link">&para;</a></h2>
 <p>```java id="u7c4zs"
 public int binarySearch(int[] arr, int target) {
     int left = 0;
@@ -1892,13 +1892,13 @@ return -1;
 </code></pre></div>
 <p>}
 ```</p>
-<p>👉 À chaque étape :</p>
+<p>À chaque étape :</p>
 <ul>
 <li>on divise le problème par 2</li>
 <li>donc très rapide même avec beaucoup de données</li>
 </ul>
 <hr />
-<h2 id="exemples-concrets">🧠 Exemples concrets<a class="headerlink" href="#exemples-concrets" title="Permanent link">&para;</a></h2>
+<h2 id="exemples-concrets">Exemples concrets<a class="headerlink" href="#exemples-concrets" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1926,43 +1926,43 @@ return -1;
 </tbody>
 </table>
 <hr />
-<h2 id="piege-important">⚠️ Piège important<a class="headerlink" href="#piege-important" title="Permanent link">&para;</a></h2>
-<p>👉 <code>HashMap</code> :</p>
+<h2 id="piege-important">Piège important<a class="headerlink" href="#piege-important" title="Permanent link">&para;</a></h2>
+<p><code>HashMap</code> :</p>
 <ul>
 <li>✔️ O(1) en moyenne</li>
 <li>❌ peut devenir O(n) dans le pire cas</li>
 </ul>
 <hr />
-<h2 id="intuition-simple">🧠 Intuition simple<a class="headerlink" href="#intuition-simple" title="Permanent link">&para;</a></h2>
+<h2 id="intuition-simple">Intuition simple<a class="headerlink" href="#intuition-simple" title="Permanent link">&para;</a></h2>
 <ul>
 <li>O(1) → instant</li>
 <li>O(log n) → très rapide</li>
 <li>O(n) → peut devenir lent avec beaucoup de données</li>
 </ul>
 <hr />
-<h2 id="questions-classiques">🧪 Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="questions-classiques">Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 Complexité moyenne d’un <code>HashMap</code> ?
-👉 ✔️ O(1)</p>
+<p>Complexité moyenne d’un <code>HashMap</code> ?
+O(1)</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 Complexité d’une boucle ?
-👉 ✔️ O(n)</p>
+<p>Complexité d’une boucle ?
+O(n)</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 Complexité d’une binary search ?
-👉 ✔️ O(log n)</p>
+<p>Complexité d’une binary search ?
+O(log n)</p>
 <hr />
 <h3 id="q4">Q4<a class="headerlink" href="#q4" title="Permanent link">&para;</a></h3>
-<p>👉 Le plus rapide ?</p>
+<p>Le plus rapide ?</p>
 <ul>
 <li>A. O(n)</li>
 <li>B. O(log n)</li>
 <li>C. O(1)</li>
 </ul>
-<p>👉 ✔️ Réponse : C</p>
+<p>Réponse : C</p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>la complexité détermine la performance</li>
 <li>O(1) est idéal</li>
@@ -1977,7 +1977,7 @@ return -1;
 <li>O(n) → dépend du volume</li>
 <li>O(log n) → très performant</li>
 </ul>
-<p>👉 Bien choisir la complexité permet d’améliorer fortement les performances et la latence d’une application.</p>
+<p>Bien choisir la complexité permet d’améliorer fortement les performances et la latence d’une application.</p>
 
 
 

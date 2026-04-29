@@ -1649,12 +1649,12 @@
   <a href="#idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Idée simple
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 Idée simple">
+    <nav class="md-nav" aria-label="Idée simple">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1688,7 +1688,7 @@
   <a href="#probleme-avec-hashmap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Problème avec HashMap
+        Problème avec HashMap
       
     </span>
   </a>
@@ -1738,7 +1738,7 @@
   <a href="#pourquoi-pas-juste-synchronized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 Pourquoi pas juste synchronized ?
+        Pourquoi pas juste synchronized ?
       
     </span>
   </a>
@@ -1749,7 +1749,7 @@
   <a href="#resume-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Résumé simple
+        Résumé simple
       
     </span>
   </a>
@@ -1760,7 +1760,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1771,12 +1771,12 @@
   <a href="#questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Questions classiques
+        Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 Questions classiques">
+    <nav class="md-nav" aria-label="Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1832,7 +1832,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
+        À retenir
       
     </span>
   </a>
@@ -1870,7 +1870,7 @@
 <h1 id="java-hashmap-vs-concurrenthashmap-concurrence-performance">Java — HashMap vs ConcurrentHashMap (Concurrence &amp; performance)<a class="headerlink" href="#java-hashmap-vs-concurrenthashmap-concurrence-performance" title="Permanent link">&para;</a></h1>
 <p>Comprendre la différence entre <code>HashMap</code> et <code>ConcurrentHashMap</code> est essentiel dès qu’on travaille avec plusieurs threads. C’est un sujet très fréquent et directement lié aux performances et à la stabilité des applications.</p>
 <hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="idee-simple">Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
 <h3 id="hashmap"><code>HashMap</code><a class="headerlink" href="#hashmap" title="Permanent link">&para;</a></h3>
 <ul>
 <li>❌ pas thread-safe</li>
@@ -1882,10 +1882,10 @@
 <li>✔️ optimisé pour la concurrence</li>
 </ul>
 <hr />
-<h2 id="probleme-avec-hashmap">⚠️ Problème avec <code>HashMap</code><a class="headerlink" href="#probleme-avec-hashmap" title="Permanent link">&para;</a></h2>
+<h2 id="probleme-avec-hashmap">Problème avec <code>HashMap</code><a class="headerlink" href="#probleme-avec-hashmap" title="Permanent link">&para;</a></h2>
 <p>```java id="3c7c8y"
 Map<String, Integer> map = new HashMap&lt;&gt;();
-<div class="highlight"><pre><span></span><code>👉 En multithreading :
+<div class="highlight"><pre><span></span><code>En multithreading :
 
 * données corrompues
 * résultats imprévisibles
@@ -1893,12 +1893,12 @@ Map<String, Integer> map = new HashMap&lt;&gt;();
 
 ---
 
-## ✅ Solution : `ConcurrentHashMap`
+## Solution : `ConcurrentHashMap`
 
 ```java id=&quot;4m1p2s&quot;
 Map&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();
 </code></pre></div></p>
-<p>👉 Permet :</p>
+<p>Permet :</p>
 <ul>
 <li>accès concurrent sécurisé</li>
 <li>bonnes performances</li>
@@ -1919,22 +1919,22 @@ Map&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();
 <li>meilleure scalabilité</li>
 </ul>
 <hr />
-<h2 id="pourquoi-pas-juste-synchronized">🔥 Pourquoi pas juste <code>synchronized</code> ?<a class="headerlink" href="#pourquoi-pas-juste-synchronized" title="Permanent link">&para;</a></h2>
+<h2 id="pourquoi-pas-juste-synchronized">Pourquoi pas juste <code>synchronized</code> ?<a class="headerlink" href="#pourquoi-pas-juste-synchronized" title="Permanent link">&para;</a></h2>
 <p><code>java id="8h9k2q"
 Map&lt;String, Integer&gt; map = Collections.synchronizedMap(new HashMap&lt;&gt;());</code></p>
-<p>👉 Problème :</p>
+<p>Problème :</p>
 <ul>
 <li>verrou global (lock sur toute la map)</li>
 <li>forte contention</li>
 <li>performances réduites</li>
 </ul>
-<p>👉 <code>ConcurrentHashMap</code> est préférable car :</p>
+<p><code>ConcurrentHashMap</code> est préférable car :</p>
 <ul>
 <li>verrouillage partiel (par zones internes)</li>
 <li>plusieurs threads peuvent travailler en parallèle</li>
 </ul>
 <hr />
-<h2 id="resume-simple">🧠 Résumé simple<a class="headerlink" href="#resume-simple" title="Permanent link">&para;</a></h2>
+<h2 id="resume-simple">Résumé simple<a class="headerlink" href="#resume-simple" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1962,36 +1962,36 @@ Map&lt;String, Integer&gt; map = Collections.synchronizedMap(new HashMap&lt;&gt;
 </tbody>
 </table>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>utiliser <code>HashMap</code> en multithread ❌</li>
-<li>penser que <code>synchronizedMap</code> est optimal ❌</li>
-<li>ignorer la contention ❌</li>
+<li>utiliser <code>HashMap</code> en multithread</li>
+<li>penser que <code>synchronizedMap</code> est optimal</li>
+<li>ignorer la contention</li>
 </ul>
 <hr />
-<h2 id="questions-classiques">🧪 Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="questions-classiques">Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 <code>HashMap</code> est-il thread-safe ?
-👉 ❌ Non</p>
+<p><code>HashMap</code> est-il thread-safe ?
+Non</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 <code>ConcurrentHashMap</code> utilise quel type de verrou ?</p>
+<p><code>ConcurrentHashMap</code> utilise quel type de verrou ?</p>
 <ul>
 <li>A. lock global</li>
 <li>B. lock fin</li>
 <li>C. aucun lock</li>
 </ul>
-<p>👉 ✔️ Réponse : <strong>B</strong></p>
+<p>Réponse : <strong>B</strong></p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 Pourquoi éviter <code>synchronizedMap</code> ?</p>
-<p>👉 ✔️ car il utilise un <strong>lock global</strong>, ce qui augmente la contention et réduit les performances</p>
+<p>Pourquoi éviter <code>synchronizedMap</code> ?</p>
+<p>car il utilise un <strong>lock global</strong>, ce qui augmente la contention et réduit les performances</p>
 <hr />
 <h3 id="q4">Q4<a class="headerlink" href="#q4" title="Permanent link">&para;</a></h3>
-<p>👉 Quel choix pour une application multi-thread (ex: trading) ?</p>
-<p>👉 ✔️ <code>ConcurrentHashMap</code></p>
+<p>Quel choix pour une application multi-thread (ex: trading) ?</p>
+<p><code>ConcurrentHashMap</code></p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>HashMap</code> est rapide mais dangereux en multi-thread</li>
 <li><code>ConcurrentHashMap</code> est conçu pour la concurrence</li>
@@ -2006,7 +2006,7 @@ Map&lt;String, Integer&gt; map = Collections.synchronizedMap(new HashMap&lt;&gt;
 <li><code>synchronizedMap</code> → fonctionne mais moins performant</li>
 <li>en concurrence réelle → privilégier <code>ConcurrentHashMap</code></li>
 </ul>
-<p>👉 Le choix de la structure de données impacte directement la performance et la stabilité d’une application concurrente.</p>
+<p>Le choix de la structure de données impacte directement la performance et la stabilité d’une application concurrente.</p>
 
 
 

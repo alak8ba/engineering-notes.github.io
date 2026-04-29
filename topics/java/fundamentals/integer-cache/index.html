@@ -1649,7 +1649,7 @@
   <a href="#idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple simple
+        Exemple simple
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#exemple-piegeux" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Exemple piégeux
+        Exemple piégeux
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#visualisation-mentale" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Visualisation mentale
+        Visualisation mentale
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#le-mecanisme-derriere" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 Le mécanisme derrière
+        Le mécanisme derrière
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#attention-avec" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Attention avec ==
+        Attention avec ==
       
     </span>
   </a>
@@ -1715,7 +1715,7 @@
   <a href="#comparaison-correcte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Comparaison correcte
+        Comparaison correcte
       
     </span>
   </a>
@@ -1726,7 +1726,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1764,45 +1764,45 @@
 <h1 id="java-integer-cache">Java — Integer Cache<a class="headerlink" href="#java-integer-cache" title="Permanent link">&para;</a></h1>
 <p>Le <strong>Integer Cache</strong> est un mécanisme interne de Java souvent méconnu… mais qui peut facilement piéger, surtout lors des comparaisons avec <code>==</code>.</p>
 <hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="idee-simple">Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
 <p>Java met en cache certaines valeurs de <code>Integer</code> pour optimiser les performances.</p>
-<p>👉 Concrètement :</p>
+<p>Concrètement :</p>
 <ul>
 <li>les entiers entre <strong>-128 et 127</strong> sont <strong>réutilisés</strong></li>
 <li>au lieu de créer un nouvel objet à chaque fois</li>
 </ul>
 <hr />
-<h2 id="exemple-simple">🧩 Exemple simple<a class="headerlink" href="#exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-simple">Exemple simple<a class="headerlink" href="#exemple-simple" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
-<p>👉 Pourquoi <code>true</code> ?</p>
+<p>Pourquoi <code>true</code> ?</p>
 <ul>
 <li>100 est dans l’intervalle [-128, 127]</li>
 <li>Java utilise <strong>le même objet en mémoire</strong></li>
 <li>donc <code>a</code> et <code>b</code> pointent vers la même référence</li>
 </ul>
 <hr />
-<h2 id="exemple-piegeux">⚠️ Exemple piégeux<a class="headerlink" href="#exemple-piegeux" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-piegeux">Exemple piégeux<a class="headerlink" href="#exemple-piegeux" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
 </code></pre></div>
-<p>👉 Pourquoi <code>false</code> ?</p>
+<p>Pourquoi <code>false</code> ?</p>
 <ul>
 <li>200 est <strong>hors du cache</strong></li>
 <li>Java crée <strong>deux objets distincts</strong></li>
 <li>donc références différentes</li>
 </ul>
 <hr />
-<h2 id="visualisation-mentale">🧠 Visualisation mentale<a class="headerlink" href="#visualisation-mentale" title="Permanent link">&para;</a></h2>
+<h2 id="visualisation-mentale">Visualisation mentale<a class="headerlink" href="#visualisation-mentale" title="Permanent link">&para;</a></h2>
 <p>Quand tu écris :</p>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 </code></pre></div>
-<p>👉 Java fait en réalité :</p>
+<p>Java fait en réalité :</p>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Integer</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
 </code></pre></div>
 <p>Et cette méthode :</p>
@@ -1811,31 +1811,33 @@
 <li>sinon crée un nouvel objet</li>
 </ul>
 <hr />
-<h2 id="le-mecanisme-derriere">🔍 Le mécanisme derrière<a class="headerlink" href="#le-mecanisme-derriere" title="Permanent link">&para;</a></h2>
+<h2 id="le-mecanisme-derriere">Le mécanisme derrière<a class="headerlink" href="#le-mecanisme-derriere" title="Permanent link">&para;</a></h2>
 <p>Le cache est géré par :</p>
-<p>👉 <code>Integer.IntegerCache</code></p>
+<p><code>Integer.IntegerCache</code></p>
 <p>Elle stocke les objets entre -128 et 127.</p>
 <hr />
-<h2 id="attention-avec">⚠️ Attention avec <code>==</code><a class="headerlink" href="#attention-avec" title="Permanent link">&para;</a></h2>
+<h2 id="attention-avec">Attention avec <code>==</code><a class="headerlink" href="#attention-avec" title="Permanent link">&para;</a></h2>
 <p>Le piège classique :</p>
-<p>👉 penser que <code>==</code> compare les valeurs</p>
-<p>❌ Faux</p>
-<p>👉 <code>==</code> compare les <strong>références</strong></p>
+<p>penser que <code>==</code> compare les valeurs</p>
+<ul>
+<li>Faux</li>
+</ul>
+<p><code>==</code> compare les <strong>références</strong></p>
 <p>Et le cache peut donner l’illusion que ça fonctionne.</p>
 <hr />
-<h2 id="comparaison-correcte">🧪 Comparaison correcte<a class="headerlink" href="#comparaison-correcte" title="Permanent link">&para;</a></h2>
+<h2 id="comparaison-correcte">Comparaison correcte<a class="headerlink" href="#comparaison-correcte" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">b</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
-<p>👉 <code>.equals()</code> compare le contenu → toujours fiable</p>
+<p><code>.equals()</code> compare le contenu → toujours fiable</p>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>croire que <code>==</code> fonctionne pour comparer des <code>Integer</code> ❌</li>
-<li>oublier l’existence du cache ❌</li>
-<li>se faire tromper par les valeurs “qui marchent parfois” ⚠️</li>
+<li>croire que <code>==</code> fonctionne pour comparer des <code>Integer</code></li>
+<li>oublier l’existence du cache</li>
+<li>se faire tromper par les valeurs “qui marchent parfois”</li>
 </ul>
 <hr />
 <h2 id="en-resume">🧾 En résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h2>
@@ -1846,7 +1848,7 @@
 <li><code>==</code> compare les références → résultat parfois trompeur</li>
 <li><code>.equals()</code> compare les valeurs → méthode fiable</li>
 </ul>
-<p>👉 Le Integer Cache est une optimisation interne utile, mais qui peut facilement induire en erreur si on ne connaît pas son fonctionnement.</p>
+<p>Le Integer Cache est une optimisation interne utile, mais qui peut facilement induire en erreur si on ne connaît pas son fonctionnement.</p>
 
 
 

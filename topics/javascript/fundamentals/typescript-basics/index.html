@@ -1649,12 +1649,12 @@
   <a href="#javascript-vs-typescript" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 JavaScript vs TypeScript
+        JavaScript vs TypeScript
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 JavaScript vs TypeScript">
+    <nav class="md-nav" aria-label="JavaScript vs TypeScript">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1688,12 +1688,12 @@
   <a href="#exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple simple
+        Exemple simple
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 Exemple simple">
+    <nav class="md-nav" aria-label="Exemple simple">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1716,7 +1716,7 @@
   <a href="#types-de-base" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Types de base
+        Types de base
       
     </span>
   </a>
@@ -1738,7 +1738,7 @@
   <a href="#lien-avec-javascript" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Lien avec JavaScript
+        Lien avec JavaScript
       
     </span>
   </a>
@@ -1749,7 +1749,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1760,12 +1760,12 @@
   <a href="#questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Questions classiques
+        Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 Questions classiques">
+    <nav class="md-nav" aria-label="Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1810,7 +1810,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
+        À retenir
       
     </span>
   </a>
@@ -1848,7 +1848,7 @@
 <h1 id="javascript-typescript-bases-utiles">JavaScript / TypeScript — Bases utiles<a class="headerlink" href="#javascript-typescript-bases-utiles" title="Permanent link">&para;</a></h1>
 <p>Comprendre la différence entre JavaScript et TypeScript est essentiel pour travailler sur des applications modernes, notamment côté frontend.</p>
 <hr />
-<h2 id="javascript-vs-typescript">🧠 JavaScript vs TypeScript<a class="headerlink" href="#javascript-vs-typescript" title="Permanent link">&para;</a></h2>
+<h2 id="javascript-vs-typescript">JavaScript vs TypeScript<a class="headerlink" href="#javascript-vs-typescript" title="Permanent link">&para;</a></h2>
 <h3 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
 <ul>
 <li>langage dynamique</li>
@@ -1862,13 +1862,13 @@
 <li>améliore la maintenabilité</li>
 </ul>
 <hr />
-<h2 id="exemple-simple">🧩 Exemple simple<a class="headerlink" href="#exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-simple">Exemple simple<a class="headerlink" href="#exemple-simple" title="Permanent link">&para;</a></h2>
 <h3 id="javascript_1">JavaScript<a class="headerlink" href="#javascript_1" title="Permanent link">&para;</a></h3>
 <p>```javascript id="5r9k1x"
 function add(a, b) {
   return a + b;
 }
-<div class="highlight"><pre><span></span><code>👉 Problème :
+<div class="highlight"><pre><span></span><code>Problème :
 
 * aucun contrôle sur les types
 * erreurs possibles à l’exécution
@@ -1882,20 +1882,20 @@ function add(a: number, b: number): number {
   return a + b;
 }
 </code></pre></div></p>
-<p>👉 Ici :</p>
+<p>Ici :</p>
 <ul>
 <li><code>a</code> et <code>b</code> doivent être des nombres</li>
 <li>plus sûr et plus clair</li>
 </ul>
 <hr />
-<h2 id="types-de-base">🧠 Types de base<a class="headerlink" href="#types-de-base" title="Permanent link">&para;</a></h2>
+<h2 id="types-de-base">Types de base<a class="headerlink" href="#types-de-base" title="Permanent link">&para;</a></h2>
 <p>```ts id="k8w2lm"
 let x: number = 10;
 let name: string = "Ali";
 let ok: boolean = true;
 <div class="highlight"><pre><span></span><code>---
 
-## 🧩 Objet typé
+## Objet typé
 
 ```ts id=&quot;n3q7hf&quot;
 type User = {
@@ -1917,39 +1917,41 @@ const u: User = {
 <li>standard dans les projets modernes</li>
 </ul>
 <hr />
-<h2 id="lien-avec-javascript">🧠 Lien avec JavaScript<a class="headerlink" href="#lien-avec-javascript" title="Permanent link">&para;</a></h2>
-<p>👉 TypeScript n’enlève pas les comportements JavaScript :</p>
+<h2 id="lien-avec-javascript">Lien avec JavaScript<a class="headerlink" href="#lien-avec-javascript" title="Permanent link">&para;</a></h2>
+<p>TypeScript n’enlève pas les comportements JavaScript :</p>
 <ul>
-<li>closures ✔️</li>
-<li>async ✔️</li>
-<li><code>this</code> ✔️</li>
-</ul>
-<p>👉 Il ajoute simplement :</p>
-<ul>
-<li>une <strong>sécurité de typage</strong></li>
-</ul>
-<hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
-<ul>
-<li>utiliser <code>any</code> (perte de sécurité) ❌</li>
-<li>oublier les types ❌</li>
-<li>croire que TypeScript change le runtime ❌</li>
+<li>closures</li>
+<li>async</li>
+<li>
+<p><code>this</code>
+Il ajoute simplement :</p>
+</li>
+<li>
+<p>une <strong>sécurité de typage</strong></p>
+</li>
 </ul>
 <hr />
-<h2 id="questions-classiques">🧪 Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<ul>
+<li>utiliser <code>any</code> (perte de sécurité)</li>
+<li>oublier les types</li>
+<li>croire que TypeScript change le runtime</li>
+</ul>
+<hr />
+<h2 id="questions-classiques">Questions classiques<a class="headerlink" href="#questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 TypeScript est exécuté directement ?
-👉 ❌ Non</p>
+<p>TypeScript est exécuté directement ?
+Non</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 Que fait TypeScript ?
-👉 ✔️ Ajoute du typage</p>
+<p>Que fait TypeScript ?
+Ajoute du typage</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 <code>any</code> est recommandé ?
-👉 ❌ Non</p>
+<p><code>any</code> est recommandé ?
+Non</p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>TypeScript = JavaScript + types</li>
 <li>il est <strong>compilé en JavaScript</strong> avant exécution</li>
@@ -1964,7 +1966,7 @@ const u: User = {
 <li>les types aident à éviter des erreurs</li>
 <li><code>any</code> est à éviter</li>
 </ul>
-<p>👉 TypeScript est devenu un standard pour écrire du JavaScript plus robuste.</p>
+<p>TypeScript est devenu un standard pour écrire du JavaScript plus robuste.</p>
 
 
 

@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-methode-synchronisee-instance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Méthode synchronisée (instance)
+        2. Méthode synchronisée (instance)
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#3-bloc-synchronise" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 3. Bloc synchronisé
+        3. Bloc synchronisé
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#4-methode-static-synchronized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 4. Méthode static synchronized
+        4. Méthode static synchronized
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#5-resume-des-locks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔄 5. Résumé des locks
+        5. Résumé des locks
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#6-pourquoi-utiliser-synchronized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 6. Pourquoi utiliser synchronized ?
+        6. Pourquoi utiliser synchronized ?
       
     </span>
   </a>
@@ -1715,7 +1715,7 @@
   <a href="#7-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 7. Pièges fréquents
+        7. Pièges fréquents
       
     </span>
   </a>
@@ -1726,7 +1726,7 @@
   <a href="#8-limites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 8. Limites
+        8. Limites
       
     </span>
   </a>
@@ -1737,12 +1737,12 @@
   <a href="#9-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 9. Questions classiques
+        9. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 9. Questions classiques">
+    <nav class="md-nav" aria-label="9. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1798,7 +1798,7 @@
   <a href="#10-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 10. À retenir
+        10. À retenir
       
     </span>
   </a>
@@ -1836,12 +1836,12 @@
 <h1 id="java-synchronized-gestion-de-la-concurrence">Java — <code>synchronized</code> (Gestion de la concurrence)<a class="headerlink" href="#java-synchronized-gestion-de-la-concurrence" title="Permanent link">&para;</a></h1>
 <p>Le mot-clé <code>synchronized</code> permet de contrôler l’accès concurrent à une ressource afin d’éviter les conflits entre threads.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 <code>synchronized</code> :</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p><code>synchronized</code> :</p>
 <p>➡️ <strong>bloque l’accès concurrent</strong>
 ➡️ garantit qu’un seul thread exécute le code à la fois</p>
 <hr />
-<h2 id="2-methode-synchronisee-instance">🧩 2. Méthode synchronisée (instance)<a class="headerlink" href="#2-methode-synchronisee-instance" title="Permanent link">&para;</a></h2>
+<h2 id="2-methode-synchronisee-instance">2. Méthode synchronisée (instance)<a class="headerlink" href="#2-methode-synchronisee-instance" title="Permanent link">&para;</a></h2>
 <p>```java id="t2k9mx"
 class Counter {
     private int count = 0;</p>
@@ -1852,19 +1852,19 @@ class Counter {
 <p>}
 <code>``
 
-👉 ici :
+ici :
 
 * lock sur **l’objet courant (</code>this`)**
 * un seul thread par instance</p>
 <hr />
-<h2 id="3-bloc-synchronise">🧩 3. Bloc synchronisé<a class="headerlink" href="#3-bloc-synchronise" title="Permanent link">&para;</a></h2>
+<h2 id="3-bloc-synchronise">3. Bloc synchronisé<a class="headerlink" href="#3-bloc-synchronise" title="Permanent link">&para;</a></h2>
 <p><code>java id="w8p3zn"
 synchronized(this) {
     count++;
 }</code></p>
-<p>👉 permet de synchroniser uniquement une partie du code</p>
+<p>permet de synchroniser uniquement une partie du code</p>
 <hr />
-<h2 id="4-methode-static-synchronized">🧠 4. Méthode <code>static synchronized</code><a class="headerlink" href="#4-methode-static-synchronized" title="Permanent link">&para;</a></h2>
+<h2 id="4-methode-static-synchronized">4. Méthode <code>static synchronized</code><a class="headerlink" href="#4-methode-static-synchronized" title="Permanent link">&para;</a></h2>
 <p>```java id="z5n2qr"
 class Counter {
     private static int count = 0;</p>
@@ -1874,13 +1874,13 @@ class Counter {
 </code></pre></div>
 <p>}
 ```</p>
-<p>👉 ici :</p>
+<p>ici :</p>
 <ul>
 <li>lock sur <strong>la classe (<code>Counter.class</code>)</strong></li>
 <li>partagé entre toutes les instances</li>
 </ul>
 <hr />
-<h2 id="5-resume-des-locks">🔄 5. Résumé des locks<a class="headerlink" href="#5-resume-des-locks" title="Permanent link">&para;</a></h2>
+<h2 id="5-resume-des-locks">5. Résumé des locks<a class="headerlink" href="#5-resume-des-locks" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1904,45 +1904,45 @@ class Counter {
 </tbody>
 </table>
 <hr />
-<h2 id="6-pourquoi-utiliser-synchronized">⚠️ 6. Pourquoi utiliser <code>synchronized</code> ?<a class="headerlink" href="#6-pourquoi-utiliser-synchronized" title="Permanent link">&para;</a></h2>
+<h2 id="6-pourquoi-utiliser-synchronized">6. Pourquoi utiliser <code>synchronized</code> ?<a class="headerlink" href="#6-pourquoi-utiliser-synchronized" title="Permanent link">&para;</a></h2>
 <ul>
 <li>éviter les race conditions</li>
 <li>garantir cohérence des données</li>
 <li>sécuriser les accès concurrents</li>
 </ul>
 <hr />
-<h2 id="7-pieges-frequents">⚠️ 7. Pièges fréquents<a class="headerlink" href="#7-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="7-pieges-frequents">7. Pièges fréquents<a class="headerlink" href="#7-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>lock trop large → performance ❌</li>
-<li>oublier le lock → bugs ❌</li>
-<li>deadlock possible ❌</li>
+<li>lock trop large → performance</li>
+<li>oublier le lock → bugs</li>
+<li>deadlock possible</li>
 </ul>
 <hr />
-<h2 id="8-limites">🧠 8. Limites<a class="headerlink" href="#8-limites" title="Permanent link">&para;</a></h2>
+<h2 id="8-limites">8. Limites<a class="headerlink" href="#8-limites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>blocage (threads attendent)</li>
 <li>pas toujours performant</li>
 <li>peut créer contention</li>
 </ul>
 <hr />
-<h2 id="9-questions-classiques">🧪 9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="9-questions-classiques">9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 <code>synchronized</code> fait quoi ?
-👉 ✔️ bloque accès concurrent</p>
+<p><code>synchronized</code> fait quoi ?
+bloque accès concurrent</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 lock instance = ?
-👉 ✔️ objet (<code>this</code>)</p>
+<p>lock instance = ?
+objet (<code>this</code>)</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 lock static = ?
-👉 ✔️ classe</p>
+<p>lock static = ?
+classe</p>
 <hr />
 <h3 id="q4">Q4<a class="headerlink" href="#q4" title="Permanent link">&para;</a></h3>
-<p>👉 danger principal ?
-👉 ✔️ deadlock</p>
+<p>danger principal ?
+deadlock</p>
 <hr />
-<h2 id="10-a-retenir">🧠 10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="10-a-retenir">10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>synchronized</code> = exclusivité</li>
 <li>instance → lock objet</li>
@@ -1956,7 +1956,7 @@ class Counter {
 <li>évite les conflits entre threads</li>
 <li>peut ralentir si mal utilisé</li>
 </ul>
-<p>👉 C’est un outil puissant mais à utiliser avec précaution en concurrence.</p>
+<p>C’est un outil puissant mais à utiliser avec précaution en concurrence.</p>
 
 
 

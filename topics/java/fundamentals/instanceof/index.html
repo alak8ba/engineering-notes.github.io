@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Exemple simple
+        2. Exemple simple
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#4-cas-important-null" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 4. Cas important : null
+        4. Cas important : null
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#6-version-moderne-java-16" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 6. Version moderne (Java 16+)
+        6. Version moderne (Java 16+)
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1704,12 +1704,12 @@
   <a href="#7-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 7. Questions classiques
+        7. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 7. Questions classiques">
+    <nav class="md-nav" aria-label="7. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1754,7 +1754,7 @@
   <a href="#8-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 8. À retenir
+        8. À retenir
       
     </span>
   </a>
@@ -1792,21 +1792,21 @@
 <h1 id="java-instanceof-verification-de-type">Java — <code>instanceof</code> (Vérification de type)<a class="headerlink" href="#java-instanceof-verification-de-type" title="Permanent link">&para;</a></h1>
 <p>L’opérateur <code>instanceof</code> permet de vérifier si un objet est une instance d’une classe ou d’une interface.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 <code>instanceof</code> vérifie :</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p><code>instanceof</code> vérifie :</p>
 <p>➡️ <strong>le type réel d’un objet à l’exécution</strong></p>
 <hr />
-<h2 id="2-exemple-simple">🧩 2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="2-exemple-simple">2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
 <p>```java id="k2n9zp"
 String s = "hello";</p>
 <p>System.out.println(s instanceof String); // true
-<div class="highlight"><pre><span></span><code>👉 ici :
+<div class="highlight"><pre><span></span><code>ici :
 
 * `s` est bien un `String`
 
 ---
 
-## 🧩 3. Avec héritage
+## 3. Avec héritage
 
 ```java id=&quot;w7x3rm&quot;
 class Animal {}
@@ -1817,19 +1817,19 @@ Animal a = new Dog();
 System.out.println(a instanceof Dog);    // true
 System.out.println(a instanceof Animal); // true
 </code></pre></div></p>
-<p>👉 <code>instanceof</code> fonctionne avec la hiérarchie</p>
+<p><code>instanceof</code> fonctionne avec la hiérarchie</p>
 <hr />
-<h2 id="4-cas-important-null">⚠️ 4. Cas important : <code>null</code><a class="headerlink" href="#4-cas-important-null" title="Permanent link">&para;</a></h2>
+<h2 id="4-cas-important-null">4. Cas important : <code>null</code><a class="headerlink" href="#4-cas-important-null" title="Permanent link">&para;</a></h2>
 <p>```java id="p9q2lt"
 Object obj = null;</p>
 <p>System.out.println(obj instanceof Object); // false
-<div class="highlight"><pre><span></span><code>👉 ✔️ Résultat : **false**
+<div class="highlight"><pre><span></span><code>Résultat : **false**
 
 ---
 
-## 🧠 Pourquoi ?
+## Pourquoi ?
 
-👉 `instanceof` retourne :
+`instanceof` retourne :
 
 * `true` → si l’objet existe et correspond au type
 * `false` → si `null`
@@ -1838,43 +1838,43 @@ Object obj = null;</p>
 
 ---
 
-## 🧩 5. Utilisation pratique
+## 5. Utilisation pratique
 
 ```java id=&quot;z8m4xs&quot;
 if (obj instanceof String) {
     String str = (String) obj;
 }
 </code></pre></div></p>
-<p>👉 permet de sécuriser un cast</p>
+<p>permet de sécuriser un cast</p>
 <hr />
-<h2 id="6-version-moderne-java-16">🔥 6. Version moderne (Java 16+)<a class="headerlink" href="#6-version-moderne-java-16" title="Permanent link">&para;</a></h2>
+<h2 id="6-version-moderne-java-16">6. Version moderne (Java 16+)<a class="headerlink" href="#6-version-moderne-java-16" title="Permanent link">&para;</a></h2>
 <p><code>java id="f3r7yn"
 if (obj instanceof String str) {
     System.out.println(str.length());
 }</code></p>
-<p>👉 plus besoin de cast manuel</p>
+<p>plus besoin de cast manuel</p>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>oublier que <code>null instanceof</code> = false ❌</li>
-<li>faire un cast sans vérifier ❌</li>
-<li>confusion avec type à la compilation ❌</li>
+<li>oublier que <code>null instanceof</code> = false</li>
+<li>faire un cast sans vérifier</li>
+<li>confusion avec type à la compilation</li>
 </ul>
 <hr />
-<h2 id="7-questions-classiques">🧪 7. Questions classiques<a class="headerlink" href="#7-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="7-questions-classiques">7. Questions classiques<a class="headerlink" href="#7-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 <code>instanceof</code> sert à quoi ?
-👉 ✔️ vérifier le type</p>
+<p><code>instanceof</code> sert à quoi ?
+vérifier le type</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 <code>null instanceof Object</code> ?
-👉 ✔️ false</p>
+<p><code>null instanceof Object</code> ?
+false</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 pourquoi utiliser <code>instanceof</code> ?
-👉 ✔️ éviter erreurs de cast</p>
+<p>pourquoi utiliser <code>instanceof</code> ?
+éviter erreurs de cast</p>
 <hr />
-<h2 id="8-a-retenir">🧠 8. À retenir<a class="headerlink" href="#8-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="8-a-retenir">8. À retenir<a class="headerlink" href="#8-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>vérification à l’exécution</li>
 <li>fonctionne avec héritage</li>
@@ -1887,7 +1887,7 @@ if (obj instanceof String str) {
 <li>utile avant un cast</li>
 <li><code>null</code> n’est jamais une instance</li>
 </ul>
-<p>👉 C’est un outil simple mais très utilisé en Java pour sécuriser le code.</p>
+<p>C’est un outil simple mais très utilisé en Java pour sécuriser le code.</p>
 
 
 

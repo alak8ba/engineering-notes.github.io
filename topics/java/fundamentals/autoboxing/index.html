@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Exemple simple
+        2. Exemple simple
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#3-unboxing-inverse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔄 3. Unboxing (inverse)
+        3. Unboxing (inverse)
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#4-types-concernes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 4. Types concernés
+        4. Types concernés
       
     </span>
   </a>
@@ -1693,7 +1693,7 @@
   <a href="#5-piege-important-null" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 5. Piège important (null)
+        5. Piège important (null)
       
     </span>
   </a>
@@ -1704,7 +1704,7 @@
   <a href="#7-ou-ca-arrive-souvent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 7. Où ça arrive souvent
+        7. Où ça arrive souvent
       
     </span>
   </a>
@@ -1715,7 +1715,7 @@
   <a href="#pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Pièges fréquents
+        Pièges fréquents
       
     </span>
   </a>
@@ -1726,12 +1726,12 @@
   <a href="#8-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 8. Questions classiques
+        8. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 8. Questions classiques">
+    <nav class="md-nav" aria-label="8. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1776,7 +1776,7 @@
   <a href="#9-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 9. À retenir
+        9. À retenir
       
     </span>
   </a>
@@ -1814,32 +1814,32 @@
 <h1 id="java-autoboxing-conversion-automatique">Java — Autoboxing (Conversion automatique)<a class="headerlink" href="#java-autoboxing-conversion-automatique" title="Permanent link">&para;</a></h1>
 <p>L’<strong>autoboxing</strong> est un mécanisme en Java qui permet de convertir automatiquement un type primitif en objet.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 <strong>autoboxing = conversion automatique</strong></p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p><strong>autoboxing = conversion automatique</strong></p>
 <p>➡️ primitive → objet</p>
 <hr />
-<h2 id="2-exemple-simple">🧩 2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
+<h2 id="2-exemple-simple">2. Exemple simple<a class="headerlink" href="#2-exemple-simple" title="Permanent link">&para;</a></h2>
 <p>```java id="z4p2rm"
 int x = 10;
 Integer y = x; // autoboxing
-<div class="highlight"><pre><span></span><code>👉 Java transforme automatiquement :
+<div class="highlight"><pre><span></span><code>Java transforme automatiquement :
 
 ```java id=&quot;6n3vqt&quot;
 Integer y = Integer.valueOf(x);
 </code></pre></div></p>
 <hr />
-<h2 id="3-unboxing-inverse">🔄 3. Unboxing (inverse)<a class="headerlink" href="#3-unboxing-inverse" title="Permanent link">&para;</a></h2>
-<p>👉 conversion objet → primitive</p>
+<h2 id="3-unboxing-inverse">3. Unboxing (inverse)<a class="headerlink" href="#3-unboxing-inverse" title="Permanent link">&para;</a></h2>
+<p>conversion objet → primitive</p>
 <p>```java id="8k1dhs"
 Integer y = 10;
 int x = y; // unboxing
-<div class="highlight"><pre><span></span><code>👉 équivalent :
+<div class="highlight"><pre><span></span><code>équivalent :
 
 ```java id=&quot;p9x3wr&quot;
 int x = y.intValue();
 </code></pre></div></p>
 <hr />
-<h2 id="4-types-concernes">🧠 4. Types concernés<a class="headerlink" href="#4-types-concernes" title="Permanent link">&para;</a></h2>
+<h2 id="4-types-concernes">4. Types concernés<a class="headerlink" href="#4-types-concernes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1867,17 +1867,17 @@ int x = y.intValue();
 </tbody>
 </table>
 <hr />
-<h2 id="5-piege-important-null">⚠️ 5. Piège important (null)<a class="headerlink" href="#5-piege-important-null" title="Permanent link">&para;</a></h2>
+<h2 id="5-piege-important-null">5. Piège important (null)<a class="headerlink" href="#5-piege-important-null" title="Permanent link">&para;</a></h2>
 <p>```java id="r7k2lm"
 Integer x = null;
 int y = x; // ❌ NullPointerException
-<div class="highlight"><pre><span></span><code>👉 pourquoi ?
+<div class="highlight"><pre><span></span><code>pourquoi ?
 
 * unboxing tente de convertir `null` → erreur
 
 ---
 
-## ⚠️ 6. Piège performance
+## 6. Piège performance
 
 ```java id=&quot;v2n8qp&quot;
 Integer sum = 0;
@@ -1886,40 +1886,40 @@ for (int i = 0; i &lt; 1000; i++) {
     sum += i; // autoboxing + unboxing à chaque tour
 }
 </code></pre></div></p>
-<p>👉 problème :</p>
+<p>problème :</p>
 <ul>
 <li>création d’objets inutile</li>
 <li>impact performance</li>
 </ul>
 <hr />
-<h2 id="7-ou-ca-arrive-souvent">🧠 7. Où ça arrive souvent<a class="headerlink" href="#7-ou-ca-arrive-souvent" title="Permanent link">&para;</a></h2>
+<h2 id="7-ou-ca-arrive-souvent">7. Où ça arrive souvent<a class="headerlink" href="#7-ou-ca-arrive-souvent" title="Permanent link">&para;</a></h2>
 <ul>
 <li>collections (<code>List&lt;Integer&gt;</code>)</li>
 <li>comparaisons</li>
 <li>opérations math</li>
 </ul>
 <hr />
-<h2 id="pieges-frequents">⚠️ Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="pieges-frequents">Pièges fréquents<a class="headerlink" href="#pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>null</code> → crash ❌</li>
-<li>performance ❌</li>
-<li>confusion entre <code>==</code> et <code>.equals()</code> ❌</li>
+<li><code>null</code> → crash</li>
+<li>performance</li>
+<li>confusion entre <code>==</code> et <code>.equals()</code></li>
 </ul>
 <hr />
-<h2 id="8-questions-classiques">🧪 8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="8-questions-classiques">8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 autoboxing = ?
-👉 ✔️ primitive → objet</p>
+<p>autoboxing = ?
+primitive → objet</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 unboxing = ?
-👉 ✔️ objet → primitive</p>
+<p>unboxing = ?
+objet → primitive</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 danger principal ?
-👉 ✔️ NullPointerException</p>
+<p>danger principal ?
+NullPointerException</p>
 <hr />
-<h2 id="9-a-retenir">🧠 9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="9-a-retenir">9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>autoboxing est automatique</li>
 <li>simplifie le code</li>
@@ -1933,7 +1933,7 @@ for (int i = 0; i &lt; 1000; i++) {
 <li>objet → primitive (unboxing)</li>
 <li>pratique mais à utiliser avec prudence</li>
 </ul>
-<p>👉 L’autoboxing est simple, mais peut introduire des bugs subtils et des problèmes de performance.</p>
+<p>L’autoboxing est simple, mais peut introduire des bugs subtils et des problèmes de performance.</p>
 
 
 

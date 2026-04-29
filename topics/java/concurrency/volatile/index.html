@@ -1649,7 +1649,7 @@
   <a href="#idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Idée simple
+        Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#probleme-sans-volatile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Problème sans volatile
+        Problème sans volatile
       
     </span>
   </a>
@@ -1671,7 +1671,7 @@
   <a href="#ce-que-fait-vraiment-volatile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 Ce que fait vraiment volatile
+        Ce que fait vraiment volatile
       
     </span>
   </a>
@@ -1682,7 +1682,7 @@
   <a href="#piege-majeur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Piège majeur
+        Piège majeur
       
     </span>
   </a>
@@ -1693,12 +1693,12 @@
   <a href="#exemple-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 Exemple important
+        Exemple important
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 Exemple important">
+    <nav class="md-nav" aria-label="Exemple important">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1721,7 +1721,7 @@
   <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 À retenir
+        À retenir
       
     </span>
   </a>
@@ -1759,16 +1759,16 @@
 <h1 id="java-volatile">Java — <code>volatile</code><a class="headerlink" href="#java-volatile" title="Permanent link">&para;</a></h1>
 <p>Le mot-clé <code>volatile</code> en Java est essentiel dès qu’on travaille avec plusieurs threads. Il permet d’éviter des bugs subtils liés à la mémoire et à la visibilité des données.</p>
 <hr />
-<h2 id="idee-simple">🧠 Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="idee-simple">Idée simple<a class="headerlink" href="#idee-simple" title="Permanent link">&para;</a></h2>
 <p><code>volatile</code> garantit :</p>
-<p>👉 <strong>la visibilité des variables entre threads</strong></p>
+<p><strong>la visibilité des variables entre threads</strong></p>
 <p>Concrètement :</p>
 <ul>
 <li>si un thread modifie une variable</li>
 <li>les autres threads voient immédiatement la nouvelle valeur</li>
 </ul>
 <hr />
-<h2 id="probleme-sans-volatile">⚠️ Problème sans <code>volatile</code><a class="headerlink" href="#probleme-sans-volatile" title="Permanent link">&para;</a></h2>
+<h2 id="probleme-sans-volatile">Problème sans <code>volatile</code><a class="headerlink" href="#probleme-sans-volatile" title="Permanent link">&para;</a></h2>
 <p>```java id="n2z8sx"
 boolean running = true;</p>
 <p>Thread t = new Thread(() -&gt; {
@@ -1777,7 +1777,7 @@ boolean running = true;</p>
     }
 });</p>
 <p>running = false;
-<div class="highlight"><pre><span></span><code>👉 Problème :
+<div class="highlight"><pre><span></span><code>Problème :
 
 * le thread peut **ne jamais voir la mise à jour**
 * il continue à tourner indéfiniment
@@ -1786,34 +1786,36 @@ boolean running = true;</p>
 
 ---
 
-## ✅ Solution avec `volatile`
+## Solution avec `volatile`
 
 ```java id=&quot;4v9j3p&quot;
 volatile boolean running = true;
 </code></pre></div></p>
-<p>👉 Maintenant :</p>
+<p>Maintenant :</p>
 <ul>
 <li>chaque thread lit toujours la valeur à jour</li>
 <li>la boucle peut s’arrêter correctement</li>
 </ul>
 <hr />
-<h2 id="ce-que-fait-vraiment-volatile">🧠 Ce que fait vraiment <code>volatile</code><a class="headerlink" href="#ce-que-fait-vraiment-volatile" title="Permanent link">&para;</a></h2>
+<h2 id="ce-que-fait-vraiment-volatile">Ce que fait vraiment <code>volatile</code><a class="headerlink" href="#ce-que-fait-vraiment-volatile" title="Permanent link">&para;</a></h2>
 <p><code>volatile</code> garantit :</p>
 <ul>
 <li>✔️ <strong>visibilité mémoire</strong></li>
 <li>❌ <strong>pas d’atomicité</strong></li>
 </ul>
 <hr />
-<h2 id="piege-majeur">⚠️ Piège majeur<a class="headerlink" href="#piege-majeur" title="Permanent link">&para;</a></h2>
+<h2 id="piege-majeur">Piège majeur<a class="headerlink" href="#piege-majeur" title="Permanent link">&para;</a></h2>
 <p>Beaucoup pensent :</p>
-<p>👉 “volatile = thread-safe”</p>
-<p>❌ Faux</p>
+<p>“volatile = thread-safe”</p>
+<ul>
+<li>Faux</li>
+</ul>
 <hr />
-<h2 id="exemple-important">🧩 Exemple important<a class="headerlink" href="#exemple-important" title="Permanent link">&para;</a></h2>
+<h2 id="exemple-important">Exemple important<a class="headerlink" href="#exemple-important" title="Permanent link">&para;</a></h2>
 <p>```java id="tqk3rm"
 volatile int count = 0;</p>
 <p>count++; // ❌ pas thread-safe
-<div class="highlight"><pre><span></span><code>👉 Pourquoi ?
+<div class="highlight"><pre><span></span><code>Pourquoi ?
 
 `count++` correspond à plusieurs étapes :
 
@@ -1821,11 +1823,11 @@ volatile int count = 0;</p>
 2. l’incrémenter
 3. écrire le résultat
 
-👉 Avec plusieurs threads → conflits possibles
+Avec plusieurs threads → conflits possibles
 
 ---
 
-## 🧠 Résumé clé
+## Résumé clé
 
 | Concept    | volatile |
 | ---------- | -------- |
@@ -1835,15 +1837,15 @@ volatile int count = 0;</p>
 
 ---
 
-## 🔥 Quand utiliser `volatile`
+## Quand utiliser `volatile`
 
-### ✔️ Bon cas
+### Bon cas
 
 * variables de type **flag** (`running`, `stop`)
 * état simple partagé
 * lecture/écriture sans logique complexe
 
-### ❌ Mauvais cas
+### Mauvais cas
 
 * compteur (`count++`)
 * opérations multiples
@@ -1851,7 +1853,7 @@ volatile int count = 0;</p>
 
 ---
 
-## 🔄 Différence avec `synchronized`
+## Différence avec `synchronized`
 
 |            | volatile | synchronized |
 | ---------- | -------- | ------------ |
@@ -1861,15 +1863,14 @@ volatile int count = 0;</p>
 
 ---
 
-## ⚠️ Pièges fréquents
+## Pièges fréquents
 
-* croire que `volatile` rend le code thread-safe ❌
-* l’utiliser pour des compteurs ❌
-* confondre visibilité et atomicité ❌
-
+* croire que `volatile` rend le code thread-safe
+* l’utiliser pour des compteurs
+* confondre visibilité et atomicité
 ---
 
-## 🧪 Questions classiques
+## Questions classiques
 
 ### Q1
 
@@ -1879,7 +1880,7 @@ volatile int count = 0;</p>
 * B. visibilité
 * C. lock
 
-👉 ✔️ Réponse : **B**
+Réponse : **B**
 
 ---
 
@@ -1889,14 +1890,14 @@ volatile int count = 0;</p>
 volatile int count = 0;
 count++;
 </code></pre></div></p>
-<p>👉 Thread-safe ?</p>
-<p>👉 ❌ Non</p>
+<p>Thread-safe ?</p>
+<p>Non</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 Pourquoi utiliser <code>volatile</code> ?</p>
-<p>👉 ✔️ Pour partager une variable simple entre threads</p>
+<p>Pourquoi utiliser <code>volatile</code> ?</p>
+<p>Pour partager une variable simple entre threads</p>
 <hr />
-<h2 id="a-retenir">🧠 À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>volatile</code> rend les modifications visibles immédiatement</li>
 <li>il ne protège pas contre les accès concurrents</li>
@@ -1910,7 +1911,7 @@ count++;
 <li>il est utile pour des cas simples (flags, états)</li>
 <li>il ne remplace pas les mécanismes de synchronisation</li>
 </ul>
-<p>👉 C’est un outil simple, mais crucial pour éviter certains bugs en environnement concurrent.</p>
+<p>C’est un outil simple, mais crucial pour éviter certains bugs en environnement concurrent.</p>
 
 
 

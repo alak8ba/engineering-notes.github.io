@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-probleme-sans-factory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Problème sans factory
+        2. Problème sans factory
       
     </span>
   </a>
@@ -1671,12 +1671,12 @@
   <a href="#3-solution-avec-factory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 3. Solution avec Factory
+        3. Solution avec Factory
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="✅ 3. Solution avec Factory">
+    <nav class="md-nav" aria-label="3. Solution avec Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1699,7 +1699,7 @@
   <a href="#4-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 4. Structure
+        4. Structure
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#5-avantages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 5. Avantages
+        5. Avantages
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#6-pieges" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 6. Pièges
+        6. Pièges
       
     </span>
   </a>
@@ -1732,7 +1732,7 @@
   <a href="#7-variante-factory-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 7. Variante : Factory Method
+        7. Variante : Factory Method
       
     </span>
   </a>
@@ -1743,7 +1743,7 @@
   <a href="#8-quand-utiliser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 8. Quand utiliser ?
+        8. Quand utiliser ?
       
     </span>
   </a>
@@ -1754,12 +1754,12 @@
   <a href="#9-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 9. Questions classiques
+        9. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 9. Questions classiques">
+    <nav class="md-nav" aria-label="9. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1804,7 +1804,7 @@
   <a href="#10-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 10. À retenir
+        10. À retenir
       
     </span>
   </a>
@@ -1842,12 +1842,12 @@
 <h1 id="java-factory-pattern-creation-dobjets">Java — Factory Pattern (Création d’objets)<a class="headerlink" href="#java-factory-pattern-creation-dobjets" title="Permanent link">&para;</a></h1>
 <p>Le <strong>Factory Pattern</strong> est un design pattern très utilisé pour créer des objets de manière flexible et propre.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
 <p>Le Factory Pattern consiste à :</p>
-<p>👉 <strong>déléguer la création d’objets à une méthode ou une classe</strong></p>
+<p><strong>déléguer la création d’objets à une méthode ou une classe</strong></p>
 <p>➡️ au lieu d’utiliser directement <code>new</code></p>
 <hr />
-<h2 id="2-probleme-sans-factory">🧩 2. Problème sans factory<a class="headerlink" href="#2-probleme-sans-factory" title="Permanent link">&para;</a></h2>
+<h2 id="2-probleme-sans-factory">2. Problème sans factory<a class="headerlink" href="#2-probleme-sans-factory" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Payment</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;CARD&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
@@ -1856,14 +1856,14 @@
 <span class="w">    </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PaypalPayment</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 Problèmes :</p>
+<p>Problèmes :</p>
 <ul>
 <li>code dupliqué</li>
 <li>difficile à maintenir</li>
 <li>couplage fort</li>
 </ul>
 <hr />
-<h2 id="3-solution-avec-factory">✅ 3. Solution avec Factory<a class="headerlink" href="#3-solution-avec-factory" title="Permanent link">&para;</a></h2>
+<h2 id="3-solution-avec-factory">3. Solution avec Factory<a class="headerlink" href="#3-solution-avec-factory" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">PaymentFactory</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Payment</span><span class="w"> </span><span class="nf">create</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;CARD&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
@@ -1879,16 +1879,16 @@
 <h3 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">Payment</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PaymentFactory</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">&quot;CARD&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>👉 Plus propre et centralisé</p>
+<p>Plus propre et centralisé</p>
 <hr />
-<h2 id="4-structure">🧠 4. Structure<a class="headerlink" href="#4-structure" title="Permanent link">&para;</a></h2>
+<h2 id="4-structure">4. Structure<a class="headerlink" href="#4-structure" title="Permanent link">&para;</a></h2>
 <ul>
 <li>interface ou classe abstraite (<code>Payment</code>)</li>
 <li>classes concrètes (<code>CardPayment</code>, <code>PaypalPayment</code>)</li>
 <li>factory (<code>PaymentFactory</code>)</li>
 </ul>
 <hr />
-<h2 id="5-avantages">🔥 5. Avantages<a class="headerlink" href="#5-avantages" title="Permanent link">&para;</a></h2>
+<h2 id="5-avantages">5. Avantages<a class="headerlink" href="#5-avantages" title="Permanent link">&para;</a></h2>
 <ul>
 <li>réduit le couplage</li>
 <li>centralise la création</li>
@@ -1896,41 +1896,41 @@
 <li>améliore la lisibilité</li>
 </ul>
 <hr />
-<h2 id="6-pieges">⚠️ 6. Pièges<a class="headerlink" href="#6-pieges" title="Permanent link">&para;</a></h2>
+<h2 id="6-pieges">6. Pièges<a class="headerlink" href="#6-pieges" title="Permanent link">&para;</a></h2>
 <ul>
-<li>trop de logique dans la factory ❌</li>
-<li>utilisation abusive ❌</li>
+<li>trop de logique dans la factory</li>
+<li>utilisation abusive</li>
 <li>ne pas confondre avec DI (Dependency Injection)</li>
 </ul>
 <hr />
-<h2 id="7-variante-factory-method">🧠 7. Variante : Factory Method<a class="headerlink" href="#7-variante-factory-method" title="Permanent link">&para;</a></h2>
+<h2 id="7-variante-factory-method">7. Variante : Factory Method<a class="headerlink" href="#7-variante-factory-method" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Creator</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">abstract</span><span class="w"> </span><span class="n">Product</span><span class="w"> </span><span class="nf">create</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>👉 chaque sous-classe décide quoi créer</p>
+<p>chaque sous-classe décide quoi créer</p>
 <hr />
-<h2 id="8-quand-utiliser">🧠 8. Quand utiliser ?<a class="headerlink" href="#8-quand-utiliser" title="Permanent link">&para;</a></h2>
+<h2 id="8-quand-utiliser">8. Quand utiliser ?<a class="headerlink" href="#8-quand-utiliser" title="Permanent link">&para;</a></h2>
 <ul>
 <li>plusieurs types d’objets</li>
 <li>logique de création complexe</li>
 <li>besoin de flexibilité</li>
 </ul>
 <hr />
-<h2 id="9-questions-classiques">🧪 9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="9-questions-classiques">9. Questions classiques<a class="headerlink" href="#9-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 Pourquoi utiliser une factory ?
-👉 ✔️ centraliser la création</p>
+<p>Pourquoi utiliser une factory ?
+centraliser la création</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 Avantage principal ?
-👉 ✔️ réduction du couplage</p>
+<p>Avantage principal ?
+réduction du couplage</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 remplace <code>new</code> ?
-👉 ✔️ souvent oui</p>
+<p>remplace <code>new</code> ?
+souvent oui</p>
 <hr />
-<h2 id="10-a-retenir">🧠 10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="10-a-retenir">10. À retenir<a class="headerlink" href="#10-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Factory = création d’objet centralisée</li>
 <li>évite le <code>new</code> partout</li>
@@ -1944,7 +1944,7 @@
 <li>réduit les dépendances</li>
 <li>rend le code plus flexible</li>
 </ul>
-<p>👉 C’est un pattern simple mais très puissant pour structurer une application.</p>
+<p>C’est un pattern simple mais très puissant pour structurer une application.</p>
 
 
 

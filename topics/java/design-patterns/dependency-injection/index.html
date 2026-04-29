@@ -1649,7 +1649,7 @@
   <a href="#1-idee-simple" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 1. Idée simple
+        1. Idée simple
       
     </span>
   </a>
@@ -1660,7 +1660,7 @@
   <a href="#2-probleme-sans-di" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧩 2. Problème sans DI
+        2. Problème sans DI
       
     </span>
   </a>
@@ -1671,19 +1671,19 @@
   <a href="#4-types-dinjection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 4. Types d’injection
+        4. Types d’injection
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 4. Types d’injection">
+    <nav class="md-nav" aria-label="4. Types d’injection">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#injection-par-constructeur-recommande" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✔️ Injection par constructeur (recommandé)
+        Injection par constructeur (recommandé)
       
     </span>
   </a>
@@ -1694,7 +1694,7 @@
   <a href="#injection-par-champ-frameworks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✔️ Injection par champ (frameworks)
+        Injection par champ (frameworks)
       
     </span>
   </a>
@@ -1710,7 +1710,7 @@
   <a href="#5-avantages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 5. Avantages
+        5. Avantages
       
     </span>
   </a>
@@ -1721,7 +1721,7 @@
   <a href="#6-pieges-frequents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 6. Pièges fréquents
+        6. Pièges fréquents
       
     </span>
   </a>
@@ -1732,7 +1732,7 @@
   <a href="#7-di-vs-factory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 7. DI vs Factory
+        7. DI vs Factory
       
     </span>
   </a>
@@ -1743,12 +1743,12 @@
   <a href="#8-questions-classiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 8. Questions classiques
+        8. Questions classiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧪 8. Questions classiques">
+    <nav class="md-nav" aria-label="8. Questions classiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1793,7 +1793,7 @@
   <a href="#9-a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 9. À retenir
+        9. À retenir
       
     </span>
   </a>
@@ -1831,16 +1831,16 @@
 <h1 id="java-injection-de-dependances-dependency-injection">Java — Injection de dépendances (Dependency Injection)<a class="headerlink" href="#java-injection-de-dependances-dependency-injection" title="Permanent link">&para;</a></h1>
 <p>L’<strong>injection de dépendances (DI)</strong> est un concept clé en architecture logicielle moderne. Elle permet de rendre le code plus flexible, testable et maintenable.</p>
 <hr />
-<h2 id="1-idee-simple">🧠 1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
-<p>👉 Au lieu de créer ses dépendances (<code>new</code>), une classe les reçoit de l’extérieur</p>
+<h2 id="1-idee-simple">1. Idée simple<a class="headerlink" href="#1-idee-simple" title="Permanent link">&para;</a></h2>
+<p>Au lieu de créer ses dépendances (<code>new</code>), une classe les reçoit de l’extérieur</p>
 <p>➡️ on <strong>injecte</strong> les dépendances</p>
 <hr />
-<h2 id="2-probleme-sans-di">🧩 2. Problème sans DI<a class="headerlink" href="#2-probleme-sans-di" title="Permanent link">&para;</a></h2>
+<h2 id="2-probleme-sans-di">2. Problème sans DI<a class="headerlink" href="#2-probleme-sans-di" title="Permanent link">&para;</a></h2>
 <p>```java id="k3m9xp"
 class UserService {
     private UserRepository repo = new UserRepository();
 }
-<div class="highlight"><pre><span></span><code>👉 Problèmes :
+<div class="highlight"><pre><span></span><code>Problèmes :
 
 * couplage fort
 * difficile à tester
@@ -1848,7 +1848,7 @@ class UserService {
 
 ---
 
-## ✅ 3. Solution avec DI
+## 3. Solution avec DI
 
 ```java id=&quot;z8q2vt&quot;
 class UserService {
@@ -1859,38 +1859,38 @@ class UserService {
     }
 }
 </code></pre></div></p>
-<p>👉 Ici :</p>
+<p>Ici :</p>
 <ul>
 <li>la dépendance est fournie de l’extérieur</li>
 <li>plus flexible</li>
 </ul>
 <hr />
-<h2 id="4-types-dinjection">🧠 4. Types d’injection<a class="headerlink" href="#4-types-dinjection" title="Permanent link">&para;</a></h2>
-<h3 id="injection-par-constructeur-recommande">✔️ Injection par constructeur (recommandé)<a class="headerlink" href="#injection-par-constructeur-recommande" title="Permanent link">&para;</a></h3>
+<h2 id="4-types-dinjection">4. Types d’injection<a class="headerlink" href="#4-types-dinjection" title="Permanent link">&para;</a></h2>
+<h3 id="injection-par-constructeur-recommande">Injection par constructeur (recommandé)<a class="headerlink" href="#injection-par-constructeur-recommande" title="Permanent link">&para;</a></h3>
 <p>```java id="g7f4ns"
 public UserService(UserRepository repo) {
     this.repo = repo;
 }
-<div class="highlight"><pre><span></span><code>👉 immuable et clair
+<div class="highlight"><pre><span></span><code>immuable et clair
 
 ---
 
-### ✔️ Injection par setter
+### Injection par setter
 
 ```java id=&quot;b2x9ld&quot;
 public void setRepo(UserRepository repo) {
     this.repo = repo;
 }
 </code></pre></div></p>
-<p>👉 flexible mais moins sûr</p>
+<p>flexible mais moins sûr</p>
 <hr />
-<h3 id="injection-par-champ-frameworks">✔️ Injection par champ (frameworks)<a class="headerlink" href="#injection-par-champ-frameworks" title="Permanent link">&para;</a></h3>
+<h3 id="injection-par-champ-frameworks">Injection par champ (frameworks)<a class="headerlink" href="#injection-par-champ-frameworks" title="Permanent link">&para;</a></h3>
 <p><code>java id="m5v1pq"
 @Autowired
 private UserRepository repo;</code></p>
-<p>👉 utilisé avec frameworks (ex: Spring)</p>
+<p>utilisé avec frameworks (ex: Spring)</p>
 <hr />
-<h2 id="5-avantages">🔥 5. Avantages<a class="headerlink" href="#5-avantages" title="Permanent link">&para;</a></h2>
+<h2 id="5-avantages">5. Avantages<a class="headerlink" href="#5-avantages" title="Permanent link">&para;</a></h2>
 <ul>
 <li>réduit le couplage</li>
 <li>facilite les tests (mock facilement)</li>
@@ -1898,14 +1898,14 @@ private UserRepository repo;</code></p>
 <li>rend le code modulaire</li>
 </ul>
 <hr />
-<h2 id="6-pieges-frequents">⚠️ 6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="6-pieges-frequents">6. Pièges fréquents<a class="headerlink" href="#6-pieges-frequents" title="Permanent link">&para;</a></h2>
 <ul>
-<li>confondre DI et Factory ❌</li>
-<li>trop dépendre des frameworks ❌</li>
-<li>injection par champ difficile à tester ❌</li>
+<li>confondre DI et Factory</li>
+<li>trop dépendre des frameworks</li>
+<li>injection par champ difficile à tester</li>
 </ul>
 <hr />
-<h2 id="7-di-vs-factory">🧠 7. DI vs Factory<a class="headerlink" href="#7-di-vs-factory" title="Permanent link">&para;</a></h2>
+<h2 id="7-di-vs-factory">7. DI vs Factory<a class="headerlink" href="#7-di-vs-factory" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1927,22 +1927,22 @@ private UserRepository repo;</code></p>
 </tr>
 </tbody>
 </table>
-<p>👉 souvent utilisés ensemble</p>
+<p>souvent utilisés ensemble</p>
 <hr />
-<h2 id="8-questions-classiques">🧪 8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
+<h2 id="8-questions-classiques">8. Questions classiques<a class="headerlink" href="#8-questions-classiques" title="Permanent link">&para;</a></h2>
 <h3 id="q1">Q1<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
-<p>👉 Pourquoi utiliser DI ?
-👉 ✔️ réduire le couplage</p>
+<p>Pourquoi utiliser DI ?
+réduire le couplage</p>
 <hr />
 <h3 id="q2">Q2<a class="headerlink" href="#q2" title="Permanent link">&para;</a></h3>
-<p>👉 meilleure méthode ?
-👉 ✔️ constructeur</p>
+<p>meilleure méthode ?
+constructeur</p>
 <hr />
 <h3 id="q3">Q3<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
-<p>👉 DI remplace <code>new</code> ?
-👉 ✔️ souvent oui</p>
+<p>DI remplace <code>new</code> ?
+souvent oui</p>
 <hr />
-<h2 id="9-a-retenir">🧠 9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
+<h2 id="9-a-retenir">9. À retenir<a class="headerlink" href="#9-a-retenir" title="Permanent link">&para;</a></h2>
 <ul>
 <li>DI = dépendances injectées</li>
 <li>évite le <code>new</code> direct</li>
@@ -1956,7 +1956,7 @@ private UserRepository repo;</code></p>
 <li>elle les reçoit</li>
 <li>cela rend le code plus flexible et maintenable</li>
 </ul>
-<p>👉 La DI est un pilier du développement moderne (notamment avec Spring).</p>
+<p>La DI est un pilier du développement moderne (notamment avec Spring).</p>
 
 
 
