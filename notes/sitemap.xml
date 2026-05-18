@@ -277,6 +277,26 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-008-kafka-retry-dlt/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-009-outbox-pattern/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-010-api-streaming/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-011-container-security/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-012-rbac/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://alak8ba.github.io/notes/topics/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
