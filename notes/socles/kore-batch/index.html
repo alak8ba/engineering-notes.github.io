@@ -3834,10 +3834,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture-decisions" class="md-nav__link">
+  <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Decisions
+        Documentation
       
     </span>
   </a>
@@ -3845,10 +3845,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
+  <a href="#architecture-decision-records" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation
+        Architecture Decision Records
       
     </span>
   </a>
@@ -4003,10 +4003,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture-decisions" class="md-nav__link">
+  <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Decisions
+        Documentation
       
     </span>
   </a>
@@ -4014,10 +4014,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
+  <a href="#architecture-decision-records" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation
+        Architecture Decision Records
       
     </span>
   </a>
@@ -4084,8 +4084,22 @@
 
 
 
-<div style="text-align:center; margin-bottom:32px;">
+<div style="text-align:center; margin-bottom:16px;">
   <img src="../../assets/logo-kore-batch.svg" alt="KORE-Batch" width="120"/>
+</div>
+
+<div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:32px;">
+  <a href="https://github.com/alak8ba/kore-batch" target="_blank"
+     style="display:inline-flex; align-items:center; gap:6px; padding:7px 18px; border:1px solid #4ade80; border-radius:6px; color:#4ade80; text-decoration:none; font-family:monospace; font-size:0.82rem;">
+    ↗ GitHub
+  </a>
+  <a href="https://alak8ba.github.io/#/kore-batch#demo" target="_blank"
+     style="display:inline-flex; align-items:center; gap:6px; padding:7px 18px; border:1px solid #4ade80; background:rgba(74,222,128,0.08); border-radius:6px; color:#4ade80; text-decoration:none; font-family:monospace; font-size:0.82rem;">
+    ▶ Voir la démo portfolio
+  </a>
+  <span style="display:inline-flex; align-items:center; padding:7px 18px; border:1px solid #334155; border-radius:6px; color:#94a3b8; font-family:monospace; font-size:0.78rem;">
+    Java 21 · Spring Batch 5 · PostgreSQL · Liquibase
+  </span>
 </div>
 
 <h1 id="kore-batch-vue-densemble">kore-batch - Vue d'ensemble</h1>
@@ -4211,47 +4225,6 @@
 </tbody>
 </table>
 <hr />
-<h2 id="architecture-decisions">Architecture Decisions</h2>
-<p>7 ADR documentent les choix structurants du socle.</p>
-<table>
-<thead>
-<tr>
-<th>ADR</th>
-<th>Sujet</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="adrs/ADR-001-spring-batch-5/">ADR-001</a></td>
-<td>Migration Spring Batch 4 vers Spring Batch 5</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-002-github-packages/">ADR-002</a></td>
-<td>GitHub Packages à la place de Nexus</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-003-liquibase-vs-flyway/">ADR-003</a></td>
-<td>Liquibase à la place de Flyway</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-004-stepscope/">ADR-004</a></td>
-<td>SynchronizedItemStreamReader + @StepScope</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-005-flatfileitemreader/">ADR-005</a></td>
-<td>FlatFileItemReader vs chargement en mémoire</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-006-skip-policy/">ADR-006</a></td>
-<td>Pattern fonctionnel vs Skip natif</td>
-</tr>
-<tr>
-<td><a href="adrs/ADR-007-java-21/">ADR-007</a></td>
-<td>Java 21 comme version cible</td>
-</tr>
-</tbody>
-</table>
-<hr />
 <h2 id="documentation">Documentation</h2>
 <div class="grid cards">
 <ul>
@@ -4265,19 +4238,61 @@
 <a href="audit-mai-2026/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Audit technique Mai 2026</a></p>
 </li>
 <li>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg></span> <strong>Architecture Decisions (7 ADRs)</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg></span> <strong>Architecture Decisions</strong></p>
 <hr />
-<p><a href="adrs/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Vue d'ensemble des ADRs</a>
-<a href="adrs/ADR-001-spring-batch-5/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-001 • Migration Spring Batch 5</a>
-<a href="adrs/ADR-002-github-packages/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-002 • GitHub Packages</a>
-<a href="adrs/ADR-003-liquibase-vs-flyway/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-003 • Liquibase vs Flyway</a>
-<a href="adrs/ADR-004-stepscope/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-004 • StepScope</a>
-<a href="adrs/ADR-005-flatfileitemreader/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-005 • FlatFileItemReader</a>
-<a href="adrs/ADR-006-skip-policy/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-006 • Pattern fonctionnel vs Skip</a>
-<a href="adrs/ADR-007-java-21/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> ADR-007 • Java 21</a></p>
+<p>7 ADRs documentés • décisions prises, contexte, conséquences.</p>
+<p><a href="adrs/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Voir tous les ADRs</a></p>
 </li>
 </ul>
 </div>
+<hr />
+<h2 id="architecture-decision-records">Architecture Decision Records</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Décision</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="adrs/ADR-001-spring-batch-5/">ADR-001</a></td>
+<td>Migration Spring Batch 5</td>
+<td>JobBuilder/StepBuilder • Supplier<T> vs newInstance()</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-002-github-packages/">ADR-002</a></td>
+<td>GitHub Packages</td>
+<td>Registry Maven sans Nexus ni Artifactory</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-003-liquibase-vs-flyway/">ADR-003</a></td>
+<td>Liquibase vs Flyway</td>
+<td>Rollback natif • XML structuré pour les équipes</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-004-stepscope/">ADR-004</a></td>
+<td>@StepScope vs synchronized</td>
+<td>Isolation par partition sans contention de threads</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-005-flatfileitemreader/">ADR-005</a></td>
+<td>FlatFileItemReader</td>
+<td>Streaming vs chargement en mémoire • scalabilité</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-006-skip-policy/">ADR-006</a></td>
+<td>Pattern fonctionnel vs Skip</td>
+<td>Zéro exception propagée • synthèse exhaustive</td>
+</tr>
+<tr>
+<td><a href="adrs/ADR-007-java-21/">ADR-007</a></td>
+<td>Java 21</td>
+<td>LTS • virtual threads • records • pattern matching</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
