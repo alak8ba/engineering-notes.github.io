@@ -3931,10 +3931,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#philosophie" class="md-nav__link">
     <span class="md-ellipsis">
       
         Philosophie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-fournit-le-socle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que fournit le socle
       
     </span>
   </a>
@@ -3968,17 +3990,6 @@
     <span class="md-ellipsis">
       
         Mesures réelles (dev local · CPU sans GPU)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pages
       
     </span>
   </a>
@@ -4050,10 +4061,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#philosophie" class="md-nav__link">
     <span class="md-ellipsis">
       
         Philosophie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-fournit-le-socle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que fournit le socle
       
     </span>
   </a>
@@ -4087,17 +4120,6 @@
     <span class="md-ellipsis">
       
         Mesures réelles (dev local · CPU sans GPU)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pages
       
     </span>
   </a>
@@ -4217,21 +4239,57 @@
 <h1 id="kore-genie-socle-ia-privee-rag-entreprise">kore-genie • Socle IA Privée &amp; RAG Entreprise</h1>
 <div class="admonition success">
 <p class="admonition-title">Publié sur GitHub · MVP validé en local</p>
-<p>Code open source disponible. Stack complète opérationnelle en local : LLaMA 3 via Ollama, pipeline RAG actif, streaming WebSocket validé.
+<p>Stack complète opérationnelle en local : LLaMA 3 via Ollama, pipeline RAG actif, streaming WebSocket validé, interface Angular 17 fonctionnelle.
 Métriques mesurées : ingestion ~1min 37s, réponse RAG 54s–1min 10s sur CPU sans GPU.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Prérequis infrastructure entreprise</p>
-<p>L'inférence LLaMA 3 requiert un GPU dédié (RTX 3090+ ou équivalent) pour des temps de réponse acceptables en production. Ce socle cible un déploiement on-premise dans une entreprise disposant de serveurs GPU • typiquement une infrastructure existante ou un serveur dédié.</p>
+<p>L'inférence LLaMA 3 requiert un GPU dédié (RTX 3090+ ou équivalent) pour des temps de réponse acceptables en production. Ce socle cible un déploiement on-premise dans une entreprise disposant de serveurs GPU.</p>
 </div>
+<hr />
+<h2 id="contexte">Contexte</h2>
+<p>Les entreprises disposent de corpus documentaires internes massifs (procédures, contrats, code legacy, bases de connaissance RH) inaccessibles aux LLMs publics pour des raisons de confidentialité.</p>
+<p>kore-genie est un socle full-stack pour déployer un LLM open source <strong>entièrement on-premise</strong> : aucune donnée ne quitte le périmètre de l'entreprise. Le pipeline RAG (Retrieval-Augmented Generation) permet d'ancrer les réponses du LLM sur les documents de l'entreprise plutôt que sur ses seules données d'entraînement.</p>
 <hr />
 <h2 id="philosophie">Philosophie</h2>
 <ul>
 <li><strong>Zéro donnée sortante</strong> : aucun token ne quitte le périmètre de l'entreprise</li>
 <li><strong>Un socle, N domaines</strong> : agnostique du métier • brancher n'importe quel corpus documentaire</li>
 <li><strong>Open source uniquement</strong> : LLaMA, Ollama, LangChain4j, Chroma, zéro dépendance propriétaire</li>
-<li><strong>Progressif</strong> : MVP fonctionnel en quelques jours, extensible ensuite</li>
+<li><strong>Full-stack intégré</strong> : backend Spring Boot + frontend Angular 17 dans le même projet</li>
 </ul>
+<hr />
+<h2 id="ce-que-fournit-le-socle">Ce que fournit le socle</h2>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IngestionService</code></td>
+<td>Extraction texte (Apache Tika), découpage en chunks, vectorisation et stockage Chroma</td>
+</tr>
+<tr>
+<td><code>RagStreamingHandler</code></td>
+<td>Handler WebSocket • RAG + streaming token par token via LangChain4j</td>
+</tr>
+<tr>
+<td><code>ChatService</code> (Angular)</td>
+<td>Connexion WebSocket côté client • Observable RxJS • accumulation des tokens</td>
+</tr>
+<tr>
+<td><code>UploadComponent</code> (Angular)</td>
+<td>Drag &amp; drop PDF/Word/Markdown • <code>IngestService</code> HTTP multipart</td>
+</tr>
+<tr>
+<td>Docker Compose</td>
+<td>Ollama + Chroma + Spring Boot + Angular • démarrage en une commande</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="stack-technique">Stack technique</h2>
 <table>
@@ -4268,7 +4326,7 @@ Métriques mesurées : ingestion ~1min 37s, réponse RAG 54s–1min 10s sur CPU 
 </tr>
 <tr>
 <td>Frontend</td>
-<td>Angular 17</td>
+<td>Angular 17 standalone</td>
 </tr>
 <tr>
 <td>Déploiement</td>
@@ -4346,18 +4404,21 @@ Métriques mesurées : ingestion ~1min 37s, réponse RAG 54s–1min 10s sur CPU 
 </table>
 <div class="admonition info">
 <p class="admonition-title">Note sur les performances</p>
-<p>Les temps d'indexation et d'inférence sont liés à l'absence de GPU. En production avec un GPU dédié (ex. RTX 4090), l'inférence descend sous les 5 secondes.</p>
+<p>En production avec un GPU dédié (ex. RTX 4090), l'inférence descend sous les 5 secondes.</p>
 </div>
 <hr />
-<h2 id="pages">Pages</h2>
 <h2 id="documentation">Documentation</h2>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> <strong>Technique</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> <strong>Architecture &amp; Pipeline RAG</strong></p>
 <hr />
-<p><a href="architecture/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Architecture &amp; code</a>
-<a href="setup/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Setup &amp; démarrage</a>
+<p><a href="architecture/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Architecture &amp; code</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg></span> <strong>Mise en route</strong></p>
+<hr />
+<p><a href="setup/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Setup &amp; démarrage</a>
 <a href="https://alak8ba.github.io/#/kore-genie" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Démonstration portfolio</a></p>
 </li>
 </ul>
