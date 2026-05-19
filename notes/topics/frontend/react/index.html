@@ -3926,10 +3926,93 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#questions-dentretien-frequentes" class="md-nav__link">
+  <a href="#cas-concrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Questions d'entretien fréquentes
+        Cas concrets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cas concrets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 6
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Points clés
       
     </span>
   </a>
@@ -4552,10 +4635,93 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#questions-dentretien-frequentes" class="md-nav__link">
+  <a href="#cas-concrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Questions d'entretien fréquentes
+        Cas concrets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cas concrets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 6
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Points clés
       
     </span>
   </a>
@@ -4960,35 +5126,40 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="questions-dentretien-frequentes">Questions d'entretien fréquentes</h2>
-<details class="question">
-<summary>Pourquoi ne pas modifier le state directement ?</summary>
-<p>React compare les références pour décider de re-render. Si on mute directement (<code>state.name = 'X'</code>), la référence ne change pas → React ne détecte pas le changement → pas de re-render. Il faut toujours créer une nouvelle référence avec <code>setState</code> ou le spread <code>{ ...state, name: 'X' }</code>.</p>
-</details>
-<details class="question">
-<summary>Qu'est-ce que le Virtual DOM ?</summary>
-<p>React maintient une représentation légère du DOM en mémoire (Virtual DOM). Lors d'un changement d'état, React calcule le diff entre l'ancien et le nouveau Virtual DOM, puis applique <strong>seulement les modifications nécessaires</strong> au vrai DOM (reconciliation). C'est plus performant que de reconstruire tout le DOM.</p>
-</details>
-<details class="question">
-<summary>Différence useEffect vide [] vs sans tableau ?</summary>
+<h2 id="cas-concrets">Cas concrets</h2>
+<h3 id="exemple-1">Exemple 1</h3>
+<p>Pourquoi ne pas muter le state directement ?
+React compare les références. <code>state.name = 'X'</code> ne change pas la référence → pas de re-render. Toujours créer une nouvelle référence : <code>setState({ ...state, name: 'X' })</code>.</p>
+<hr />
+<h3 id="exemple-2">Exemple 2</h3>
+<p>Virtual DOM ?
+Représentation légère du DOM en mémoire. À chaque changement d'état, React calcule le diff entre l'ancien et le nouveau Virtual DOM et applique seulement les modifications nécessaires au vrai DOM (reconciliation).</p>
+<hr />
+<h3 id="exemple-3">Exemple 3</h3>
+<p>useEffect sans tableau vs <code>[]</code> vs <code>[dep]</code> ?
+Sans tableau : après chaque render. <code>[]</code> : une seule fois au mount. <code>[dep]</code> : au mount + à chaque changement de <code>dep</code>.</p>
+<hr />
+<h3 id="exemple-4">Exemple 4</h3>
+<p>Quand utiliser useCallback ?
+Quand une fonction est passée en prop à un composant mémorisé (<code>React.memo</code>). Sans useCallback, nouvelle référence à chaque render → React.memo ne protège plus. Ne pas l'utiliser sans mesurer d'abord.</p>
+<hr />
+<h3 id="exemple-5">Exemple 5</h3>
+<p>Context vs Zustand vs Redux ?
+Context : natif, adapté aux états qui changent peu (thème, auth). Zustand : léger, performant, DevTools. Redux Toolkit : états complexes à grande échelle. Context avec updates fréquents → re-renders en cascade.</p>
+<hr />
+<h3 id="exemple-6">Exemple 6</h3>
+<p>Réconciliation (reconciliation) ?
+Algorithme React pour déterminer le diff entre deux arbres de composants. La <code>key</code> est critique dans les listes : elle permet à React d'identifier les éléments et d'éviter de recréer ce qui n'a pas changé.</p>
+<hr />
+<h2 id="points-cles">Points clés</h2>
 <ul>
-<li>Sans tableau : s'exécute après <strong>chaque render</strong></li>
-<li><code>[]</code> vide : s'exécute une seule fois au <strong>mount</strong></li>
-<li><code>[dep]</code> : s'exécute au mount + à chaque changement de <code>dep</code></li>
+<li>tout se fait avec des fonctions depuis React 16.8 • les class components sont obsolètes</li>
+<li><code>useState</code> + <code>useEffect</code> couvrent 80% des cas</li>
+<li>ne jamais muter le state directement • toujours créer une nouvelle référence</li>
+<li><code>useCallback</code> et <code>useMemo</code> : optimisation ciblée, pas systématique</li>
+<li>Custom hooks : extraire la logique réutilisable préfixée <code>use</code></li>
+<li>React Query pour le cache HTTP • Zustand pour l'état global</li>
 </ul>
-</details>
-<details class="question">
-<summary>Quand utiliser useCallback ?</summary>
-<p>Quand une <strong>fonction est passée en prop à un composant enfant mémorisé</strong> (<code>React.memo</code>). Sans <code>useCallback</code>, la fonction est recréée à chaque render → nouvelle référence → <code>React.memo</code> ne protège plus l'enfant. En pratique : ne pas l'utiliser sans mesurer d'abord.</p>
-</details>
-<details class="question">
-<summary>Context vs Redux ?</summary>
-<p>Context est natif, simple, adapté aux états qui changent peu (thème, auth, langue). Redux (ou Zustand) est meilleur pour les états complexes, fréquemment mis à jour, ou quand on veut des DevTools de debug. Context avec des updates fréquents peut causer des re-renders en cascade.</p>
-</details>
-<details class="question">
-<summary>Qu'est-ce que la réconciliation (reconciliation) ?</summary>
-<p>Algorithme par lequel React détermine la différence entre deux arbres de composants et met à jour le DOM efficacement. La <code>key</code> prop est critique : elle aide React à identifier les éléments dans une liste pour éviter de recréer des éléments qui n'ont pas changé.</p>
-</details>
 
 
 
