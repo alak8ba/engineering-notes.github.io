@@ -3764,7 +3764,7 @@
   <a href="#1-state-la-forme-des-donnees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. State — la forme des données
+        1. State · la forme des données
       
     </span>
   </a>
@@ -3775,7 +3775,7 @@
   <a href="#2-actions-les-intentions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Actions — les intentions
+        2. Actions · les intentions
       
     </span>
   </a>
@@ -3786,7 +3786,7 @@
   <a href="#3-reducer-la-transformation-detat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Reducer — la transformation d'état
+        3. Reducer · la transformation d'état
       
     </span>
   </a>
@@ -3797,7 +3797,7 @@
   <a href="#4-selectors-lire-letat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Selectors — lire l'état
+        4. Selectors · lire l'état
       
     </span>
   </a>
@@ -3813,7 +3813,7 @@
   <a href="#effects-les-effets-de-bord-appels-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Effects — les effets de bord (appels API)
+        Effects · les effets de bord (appels API)
       
     </span>
   </a>
@@ -3824,7 +3824,7 @@
   <a href="#composant-dispatch-et-selection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Composant — dispatch et sélection
+        Composant · dispatch et sélection
       
     </span>
   </a>
@@ -3846,7 +3846,7 @@
   <a href="#ngrx-entity-simplifier-les-collections" class="md-nav__link">
     <span class="md-ellipsis">
       
-        NgRx Entity — simplifier les collections
+        NgRx Entity · simplifier les collections
       
     </span>
   </a>
@@ -4329,7 +4329,7 @@
   <a href="#1-state-la-forme-des-donnees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. State — la forme des données
+        1. State · la forme des données
       
     </span>
   </a>
@@ -4340,7 +4340,7 @@
   <a href="#2-actions-les-intentions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Actions — les intentions
+        2. Actions · les intentions
       
     </span>
   </a>
@@ -4351,7 +4351,7 @@
   <a href="#3-reducer-la-transformation-detat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Reducer — la transformation d'état
+        3. Reducer · la transformation d'état
       
     </span>
   </a>
@@ -4362,7 +4362,7 @@
   <a href="#4-selectors-lire-letat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Selectors — lire l'état
+        4. Selectors · lire l'état
       
     </span>
   </a>
@@ -4378,7 +4378,7 @@
   <a href="#effects-les-effets-de-bord-appels-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Effects — les effets de bord (appels API)
+        Effects · les effets de bord (appels API)
       
     </span>
   </a>
@@ -4389,7 +4389,7 @@
   <a href="#composant-dispatch-et-selection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Composant — dispatch et sélection
+        Composant · dispatch et sélection
       
     </span>
   </a>
@@ -4411,7 +4411,7 @@
   <a href="#ngrx-entity-simplifier-les-collections" class="md-nav__link">
     <span class="md-ellipsis">
       
-        NgRx Entity — simplifier les collections
+        NgRx Entity · simplifier les collections
       
     </span>
   </a>
@@ -4506,7 +4506,7 @@
 <h1 id="ngrx-state-management-angular">NgRx • State Management Angular</h1>
 <hr />
 <h2 id="principe">Principe</h2>
-<p>NgRx est l'implémentation Redux pour Angular. L'état de l'application est centralisé dans un <strong>Store</strong> immuable. Les composants ne modifient jamais l'état directement — ils dispatchent des <strong>Actions</strong>, traitées par des <strong>Reducers</strong> qui produisent un nouvel état.</p>
+<p>NgRx est l'implémentation Redux pour Angular. L'état de l'application est centralisé dans un <strong>Store</strong> immuable. Les composants ne modifient jamais l'état directement · ils dispatchent des <strong>Actions</strong>, traitées par des <strong>Reducers</strong> qui produisent un nouvel état.</p>
 <div class="highlight"><pre><span></span><code>Component → dispatch(Action) → Reducer → nouveau State → Store → Selector → Component
                                    ↕
                                 Effect → (API call) → dispatch(Action)
@@ -4517,7 +4517,7 @@
 </code></pre></div>
 <hr />
 <h2 id="les-4-briques-fondamentales">Les 4 briques fondamentales</h2>
-<h3 id="1-state-la-forme-des-donnees">1. State — la forme des données</h3>
+<h3 id="1-state-la-forme-des-donnees">1. State · la forme des données</h3>
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">UserState</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">users</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
@@ -4532,7 +4532,7 @@
 <span class="w">  </span><span class="nx">selectedId</span><span class="o">:</span><span class="w"> </span><span class="kt">null</span><span class="p">,</span>
 <span class="p">};</span>
 </code></pre></div>
-<h3 id="2-actions-les-intentions">2. Actions — les intentions</h3>
+<h3 id="2-actions-les-intentions">2. Actions · les intentions</h3>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createAction</span><span class="p">,</span><span class="w"> </span><span class="nx">props</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ngrx/store&#39;</span><span class="p">;</span>
 
 <span class="c1">// Charger les utilisateurs</span>
@@ -4543,7 +4543,7 @@
 <span class="c1">// Sélectionner un utilisateur</span>
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">selectUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createAction</span><span class="p">(</span><span class="s1">&#39;[Users] Select User&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">props</span><span class="o">&lt;</span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">());</span>
 </code></pre></div>
-<h3 id="3-reducer-la-transformation-detat">3. Reducer — la transformation d'état</h3>
+<h3 id="3-reducer-la-transformation-detat">3. Reducer · la transformation d'état</h3>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createReducer</span><span class="p">,</span><span class="w"> </span><span class="nx">on</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ngrx/store&#39;</span><span class="p">;</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">usersReducer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createReducer</span><span class="p">(</span>
@@ -4569,7 +4569,7 @@
 <span class="w">  </span><span class="p">})),</span>
 <span class="p">);</span>
 </code></pre></div>
-<h3 id="4-selectors-lire-letat">4. Selectors — lire l'état</h3>
+<h3 id="4-selectors-lire-letat">4. Selectors · lire l'état</h3>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createFeatureSelector</span><span class="p">,</span><span class="w"> </span><span class="nx">createSelector</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ngrx/store&#39;</span><span class="p">;</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">selectUsersState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createFeatureSelector</span><span class="o">&lt;</span><span class="nx">UserState</span><span class="o">&gt;</span><span class="p">(</span><span class="s1">&#39;users&#39;</span><span class="p">);</span>
@@ -4586,7 +4586,7 @@
 <span class="p">);</span>
 </code></pre></div>
 <hr />
-<h2 id="effects-les-effets-de-bord-appels-api">Effects — les effets de bord (appels API)</h2>
+<h2 id="effects-les-effets-de-bord-appels-api">Effects · les effets de bord (appels API)</h2>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">inject</span><span class="p">,</span><span class="w"> </span><span class="nx">Injectable</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
 <span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Actions</span><span class="p">,</span><span class="w"> </span><span class="nx">createEffect</span><span class="p">,</span><span class="w"> </span><span class="nx">ofType</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ngrx/effects&#39;</span><span class="p">;</span>
 <span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">catchError</span><span class="p">,</span><span class="w"> </span><span class="nx">map</span><span class="p">,</span><span class="w"> </span><span class="nx">switchMap</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;rxjs/operators&#39;</span><span class="p">;</span>
@@ -4611,7 +4611,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="composant-dispatch-et-selection">Composant — dispatch et sélection</h2>
+<h2 id="composant-dispatch-et-selection">Composant · dispatch et sélection</h2>
 <div class="highlight"><pre><span></span><code><span class="kd">@Component</span><span class="p">({</span>
 <span class="w">  </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
@@ -4652,7 +4652,7 @@
 <span class="p">};</span>
 </code></pre></div>
 <hr />
-<h2 id="ngrx-entity-simplifier-les-collections">NgRx Entity — simplifier les collections</h2>
+<h2 id="ngrx-entity-simplifier-les-collections">NgRx Entity · simplifier les collections</h2>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createEntityAdapter</span><span class="p">,</span><span class="w"> </span><span class="nx">EntityState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ngrx/entity&#39;</span><span class="p">;</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">UserState</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">EntityState</span><span class="o">&lt;</span><span class="nx">User</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
@@ -4684,11 +4684,11 @@
 </details>
 <details class="question">
 <summary>Différence entre switchMap et concatMap dans les effects ?</summary>
-<p><code>switchMap</code> : annule la requête précédente si une nouvelle action arrive — adapté au chargement de données. <code>concatMap</code> : attend la fin de chaque requête — adapté aux mutations séquentielles. <code>mergeMap</code> : parallèle, toutes les requêtes s'exécutent simultanément.</p>
+<p><code>switchMap</code> : annule la requête précédente si une nouvelle action arrive · adapté au chargement de données. <code>concatMap</code> : attend la fin de chaque requête · adapté aux mutations séquentielles. <code>mergeMap</code> : parallèle, toutes les requêtes s'exécutent simultanément.</p>
 </details>
 <details class="question">
 <summary>Comment éviter les selectors qui recalculent trop souvent ?</summary>
-<p>Les selectors NgRx sont mémorisés par défaut (<code>createSelector</code> utilise memoization). Ils ne recalculent que si les entrées changent. Éviter de créer des selectors inline dans le composant — les déclarer une fois dans le fichier selectors.</p>
+<p>Les selectors NgRx sont mémorisés par défaut (<code>createSelector</code> utilise memoization). Ils ne recalculent que si les entrées changent. Éviter de créer des selectors inline dans le composant · les déclarer une fois dans le fichier selectors.</p>
 </details>
 <details class="question">
 <summary>NgRx Entity vs tableau classique ?</summary>
@@ -4697,7 +4697,7 @@
 <hr />
 <h2 id="points-cles">Points clés</h2>
 <ul>
-<li>état immuable — jamais de mutation directe, toujours un nouveau <code>{...state}</code></li>
+<li>état immuable · jamais de mutation directe, toujours un nouveau <code>{...state}</code></li>
 <li>Actions = intentions, Reducers = transformation pure, Effects = effets de bord</li>
 <li><code>async pipe</code> dans les templates pour s'abonner aux observables du store</li>
 <li>NgRx Entity simplifie drastiquement la gestion des collections CRUD</li>

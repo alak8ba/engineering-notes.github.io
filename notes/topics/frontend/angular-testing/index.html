@@ -4587,7 +4587,7 @@ npm<span class="w"> </span>uninstall<span class="w"> </span>karma<span class="w"
 <span class="c1"># Installer Jest</span>
 npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>jest<span class="w"> </span>jest-environment-jsdom<span class="w"> </span>@types/jest<span class="w"> </span>jest-preset-angular
 
-<span class="c1"># angular.json — remplacer le builder de test</span>
+<span class="c1"># angular.json · remplacer le builder de test</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;test&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;builder&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@angular-devkit/build-angular:jest&quot;</span><span class="p">,</span>
@@ -4601,7 +4601,7 @@ npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class=
 <h2 id="cas-concrets">Cas concrets</h2>
 <details class="question">
 <summary>Différence entre shallow et deep rendering ?</summary>
-<p>Shallow : le composant est rendu sans ses enfants (remplacés par des stubs). Deep : toute l'arborescence est rendue. Shallow est plus rapide et isole mieux les tests unitaires — préférable pour les composants purs.</p>
+<p>Shallow : le composant est rendu sans ses enfants (remplacés par des stubs). Deep : toute l'arborescence est rendue. Shallow est plus rapide et isole mieux les tests unitaires · préférable pour les composants purs.</p>
 </details>
 <details class="question">
 <summary>Quand utiliser fixture.detectChanges() ?</summary>
@@ -4618,11 +4618,11 @@ npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class=
 <hr />
 <h2 id="points-cles">Points clés</h2>
 <ul>
-<li><code>TestBed</code> est le cœur des tests Angular — il crée un module de test léger</li>
+<li><code>TestBed</code> est le cœur des tests Angular · il crée un module de test léger</li>
 <li>toujours appeler <code>fixture.detectChanges()</code> après avoir modifié les inputs</li>
 <li><code>HttpClientTestingModule</code> + <code>HttpTestingController</code> pour mocker les appels HTTP</li>
 <li><code>useValue</code> pour injecter des mocks de services</li>
-<li>Jest remplace Karma — plus rapide, meilleure DX, officiellement recommandé</li>
+<li>Jest remplace Karma · plus rapide, meilleure DX, officiellement recommandé</li>
 </ul>
 
 

@@ -3746,7 +3746,7 @@
   <a href="#hydration-angular-17" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hydration — Angular 17
+        Hydration · Angular 17
       
     </span>
   </a>
@@ -3768,7 +3768,7 @@
   <a href="#transferstate-partager-les-donnees-serveurclient" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TransferState — partager les données serveur/client
+        TransferState · partager les données serveur/client
       
     </span>
   </a>
@@ -4311,7 +4311,7 @@
   <a href="#hydration-angular-17" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hydration — Angular 17
+        Hydration · Angular 17
       
     </span>
   </a>
@@ -4333,7 +4333,7 @@
   <a href="#transferstate-partager-les-donnees-serveurclient" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TransferState — partager les données serveur/client
+        TransferState · partager les données serveur/client
       
     </span>
   </a>
@@ -4461,7 +4461,7 @@
 <tbody>
 <tr>
 <td>SEO</td>
-<td>Les crawlers ne voient pas le contenu — pages non indexées</td>
+<td>Les crawlers ne voient pas le contenu · pages non indexées</td>
 </tr>
 <tr>
 <td>First Contentful Paint (FCP)</td>
@@ -4522,16 +4522,16 @@ server.ts                      ← serveur Express
 </code></pre></div></p>
 <hr />
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// app.config.ts — client</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// app.config.ts · client</span>
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">appConfig</span><span class="o">:</span><span class="w"> </span><span class="kt">ApplicationConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="nx">provideRouter</span><span class="p">(</span><span class="nx">routes</span><span class="p">),</span>
-<span class="w">    </span><span class="nx">provideClientHydration</span><span class="p">(),</span><span class="w">   </span><span class="c1">// Angular 17 — reprise de l&#39;état serveur</span>
+<span class="w">    </span><span class="nx">provideClientHydration</span><span class="p">(),</span><span class="w">   </span><span class="c1">// Angular 17 · reprise de l&#39;état serveur</span>
 <span class="w">    </span><span class="nx">provideHttpClient</span><span class="p">(</span><span class="nx">withFetch</span><span class="p">()),</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">};</span>
 
-<span class="c1">// app.config.server.ts — serveur</span>
+<span class="c1">// app.config.server.ts · serveur</span>
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">ApplicationConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">...</span><span class="nx">appConfig</span><span class="p">.</span><span class="nx">providers</span><span class="p">,</span>
@@ -4540,11 +4540,11 @@ server.ts                      ← serveur Express
 <span class="p">};</span>
 </code></pre></div>
 <hr />
-<h2 id="hydration-angular-17">Hydration — Angular 17</h2>
+<h2 id="hydration-angular-17">Hydration · Angular 17</h2>
 <p>L'hydration permet au client de "reprendre" le DOM généré par le serveur sans le reconstruire entièrement. Résultat : zéro flash de contenu, pas de recalcul.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Activé via provideClientHydration()</span>
 <span class="c1">// Angular compare le DOM existant avec le Virtual DOM et ne touche</span>
-<span class="c1">// que ce qui a changé — bien plus efficace que de tout recréer</span>
+<span class="c1">// que ce qui a changé · bien plus efficace que de tout recréer</span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Erreur d'hydration fréquente</p>
@@ -4574,7 +4574,7 @@ server.ts                      ← serveur Express
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="transferstate-partager-les-donnees-serveurclient">TransferState — partager les données serveur/client</h2>
+<h2 id="transferstate-partager-les-donnees-serveurclient">TransferState · partager les données serveur/client</h2>
 <p>Sans TransferState, les appels HTTP se font deux fois : une fois côté serveur pour le rendu, une fois côté client après l'hydration.</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TransferState</span><span class="p">,</span><span class="w"> </span><span class="nx">makeStateKey</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
 
@@ -4634,7 +4634,7 @@ pm2<span class="w"> </span>start<span class="w"> </span>dist/server/server.mjs<s
 </details>
 <details class="question">
 <summary>Qu'est-ce que l'hydration et pourquoi c'est important ?</summary>
-<p>Sans hydration, Angular détruisait le DOM serveur et le reconstruisait entièrement côté client — causant un flash de contenu (FCP). Avec l'hydration (Angular 17), Angular réutilise le DOM existant et ne modifie que ce qui a changé. Résultat : meilleure performance et expérience utilisateur.</p>
+<p>Sans hydration, Angular détruisait le DOM serveur et le reconstruisait entièrement côté client · causant un flash de contenu (FCP). Avec l'hydration (Angular 17), Angular réutilise le DOM existant et ne modifie que ce qui a changé. Résultat : meilleure performance et expérience utilisateur.</p>
 </details>
 <details class="question">
 <summary>Quand ne pas utiliser le SSR ?</summary>
@@ -4644,7 +4644,7 @@ pm2<span class="w"> </span>start<span class="w"> </span>dist/server/server.mjs<s
 <h2 id="points-cles">Points clés</h2>
 <ul>
 <li>SSR = HTML pré-rendu côté serveur → SEO + FCP améliorés</li>
-<li><code>provideClientHydration()</code> est la clé de voûte Angular 17 — activer systématiquement</li>
+<li><code>provideClientHydration()</code> est la clé de voûte Angular 17 · activer systématiquement</li>
 <li>toujours wrapper <code>window</code>/<code>localStorage</code>/<code>document</code> avec <code>isPlatformBrowser()</code></li>
 <li><code>TransferState</code> évite le double appel HTTP serveur→client</li>
 <li>déploiement : Node.js requis (pas de fichiers statiques seuls)</li>
