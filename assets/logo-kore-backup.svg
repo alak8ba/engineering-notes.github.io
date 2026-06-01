@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-backup" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08231F"/>
+      <stop offset="100%" style="stop-color:#03100E"/>
+    </linearGradient>
+    <filter id="glow-teal">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fond hexagonal • cohérent avec les autres logos KORE -->
+  <polygon points="100,8 178,52 178,148 100,192 22,148 22,52"
+           fill="url(#bg-backup)" stroke="#2DD4BF" stroke-width="2"/>
+
+  <!-- Hexagone intérieur décoratif -->
+  <polygon points="100,28 162,63 162,137 100,172 38,137 38,63"
+           fill="none" stroke="#2DD4BF" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Symbole : flèche d'archivage + 3 disques empiles (snapshots restic)
+       Zone : y=50 (haut flèche) → y=119 (bas disque). Marge a KORE (y=148). -->
+
+  <!-- Flèche d'archivage descendante (point qui rentre dans la pile) -->
+  <g stroke="#2DD4BF" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="100" y1="50" x2="100" y2="63"/>
+  </g>
+  <polygon points="100,67 95,59 105,59" fill="#2DD4BF" filter="url(#glow-teal)"/>
+
+  <!-- Disque haut (snapshot le plus récent - plus opaque) -->
+  <ellipse cx="100" cy="78" rx="34" ry="7"
+           fill="none" stroke="#2DD4BF" stroke-width="2"
+           filter="url(#glow-teal)"/>
+  <path d="M 66 78 L 66 84 A 34 7 0 0 0 134 84 L 134 78"
+        fill="#2DD4BF" opacity="0.20" stroke="#2DD4BF" stroke-width="2"/>
+
+  <!-- Disque milieu -->
+  <ellipse cx="100" cy="95" rx="34" ry="7"
+           fill="none" stroke="#2DD4BF" stroke-width="2" opacity="0.75"
+           filter="url(#glow-teal)"/>
+  <path d="M 66 95 L 66 101 A 34 7 0 0 0 134 101 L 134 95"
+        fill="#2DD4BF" opacity="0.14" stroke="#2DD4BF" stroke-width="2"/>
+
+  <!-- Disque bas (snapshot le plus ancien) -->
+  <ellipse cx="100" cy="112" rx="34" ry="7"
+           fill="none" stroke="#2DD4BF" stroke-width="2" opacity="0.55"
+           filter="url(#glow-teal)"/>
+  <path d="M 66 112 L 66 118 A 34 7 0 0 0 134 118 L 134 112"
+        fill="#2DD4BF" opacity="0.10" stroke="#2DD4BF" stroke-width="2"/>
+
+  <!-- Texte KORE -->
+  <text x="100" y="148" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="700"
+        font-size="20" fill="#2DD4BF" letter-spacing="3">KORE</text>
+
+  <!-- Texte BACKUP -->
+  <text x="100" y="166" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="400"
+        font-size="9" fill="#2DD4BF" opacity="0.6" letter-spacing="3">BACKUP</text>
+</svg>

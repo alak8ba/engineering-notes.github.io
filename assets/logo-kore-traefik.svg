@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-traefik" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    <filter id="glow-white">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fond hexagonal • cohérent avec les autres logos KORE -->
+  <polygon points="100,8 178,52 178,148 100,192 22,148 22,52"
+           fill="url(#bg-traefik)" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Hexagone intérieur décoratif -->
+  <polygon points="100,28 162,63 162,137 100,172 38,137 38,63"
+           fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Symbole Traefik : point d'entrée + 3 couches de routage empilées -->
+
+  <!-- Point d'entrée (port 443 / requête entrante) -->
+  <circle cx="100" cy="58" r="3.5" fill="#ffffff" filter="url(#glow-white)"/>
+  <line x1="100" y1="62" x2="100" y2="70"
+        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Couche 1 - EntryPoint (losange large) -->
+  <polygon points="100,70 132,82 100,94 68,82"
+           fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"
+           filter="url(#glow-white)"/>
+  <polygon points="100,70 132,82 100,94 68,82"
+           fill="#ffffff" opacity="0.08"/>
+
+  <!-- Couche 2 - Router / Middleware (losange médian) -->
+  <polygon points="100,88 132,100 100,112 68,100"
+           fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"
+           filter="url(#glow-white)"/>
+  <polygon points="100,88 132,100 100,112 68,100"
+           fill="#ffffff" opacity="0.12"/>
+
+  <!-- Couche 3 - Service (losange bas, centre actif) -->
+  <polygon points="100,106 132,118 100,130 68,118"
+           fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"
+           filter="url(#glow-white)"/>
+  <polygon points="100,106 132,118 100,130 68,118"
+           fill="#ffffff" opacity="0.18"/>
+
+  <!-- Cœur central : point de service (où la requête atterrit) -->
+  <circle cx="100" cy="118" r="3" fill="#ffffff" filter="url(#glow-white)"/>
+
+  <!-- Connecteurs verticaux entre couches -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.5" stroke-linecap="round">
+    <line x1="100" y1="94"  x2="100" y2="88"/>
+    <line x1="100" y1="112" x2="100" y2="106"/>
+  </g>
+
+  <!-- Texte KORE -->
+  <text x="100" y="152" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="700"
+        font-size="20" fill="#ffffff" letter-spacing="3">KORE</text>
+
+  <!-- Texte TRAEFIK (aligne sur la grille commune des logos KORE) -->
+  <text x="100" y="166" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="400"
+        font-size="8" fill="#ffffff" opacity="0.65" letter-spacing="1.5">TRAEFIK</text>
+</svg>
