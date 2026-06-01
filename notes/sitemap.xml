@@ -2,510 +2,510 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://alak8ba.github.io/notes/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/about/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/tags/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/patterns/domain-events/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/patterns/event-driven-system/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/patterns/eventual-consistency/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/audit-mai-2026/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/setup/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/tests/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/utilisation/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-001-spring-batch-5/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-002-github-packages/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-003-liquibase-vs-flyway/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-004-stepscope/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-005-flatfileitemreader/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-006-skip-policy/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-batch/adrs/ADR-007-java-21/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-genie/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-genie/architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-genie/setup/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/bounded-contexts/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/ci-cd/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/error-handling/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/frontend/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/observability/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/security/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/setup/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/tests/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-001-hexagonal-architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-002-cqrs-read-model/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-003-kafka-event-driven/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-004-idempotent-consumers/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-005-jwt-authentication/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-006-testcontainers/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-007-pull-based-deployment/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-008-kafka-retry-dlt/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-009-outbox-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-010-api-streaming/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-011-container-security/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-hexagonal/adrs/ADR-012-rbac/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-n8n/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-n8n/architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/socles/kore-n8n/setup/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/architecture/cqrs-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/architecture/rest-api-design/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/database/index-et-optimisation-postgresql/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/database/optimistic-locking/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/database/sql-joins-indexes/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/database/transaction-patterns/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/ci-cd-pipeline-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/container-security/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/docker-networking/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/docker-production-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/observability-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/pull-based-deployment/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/devops/reverse-proxy-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/distributed-tracing-and-correlation/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/eventual-consistency/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/kafka-resilience-patterns/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/microservices-communication/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/read-models-and-fetch-strategies/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/distributed/sync-vs-async/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/angular-migrations/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/angular-ssr/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/angular-testing/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/angular/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/chartjs/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/ngrx/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/frontend/react/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/http/http-basics/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/algorithms-complexity/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/concurrenthashmap/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/hashmap-treemap-linkedhashmap/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/hashmap/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/hashtable/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/iterator/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/collections/list-set-map/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/concurrency/atomic/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/concurrency/deadlock/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/concurrency/race-condition/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/concurrency/synchronized/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/concurrency/volatile/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/database/acid/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/design-patterns/dependency-injection/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/design-patterns/factory-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/design-patterns/singleton-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/autoboxing/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/equals-vs-double-equals/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/final/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/generics/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/instanceof/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/integer-cache/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/java-protected/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/java-static/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/fundamentals/static-generic-method/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/oop/inheritance/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/oop/polymorphism/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/oop/solid/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/spring/aop-spring/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/spring/bean-scopes/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/java/spring/hibernate-jpa/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/javascript/fundamentals/javascript-pitfalls/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/javascript/fundamentals/typescript-basics/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/kafka/consumer-rebalance/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/kafka/idempotent-consumers/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/kafka/outbox-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/kafka/reliability-patterns/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/kafka/retry-and-dlt-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/observability/exception-handling-spring/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/observability/logging-architecture-java/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/observability/metrics-monitoring-prometheus-grafana/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/security/cookie-security/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/security/cors/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/security/http-security-headers/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/security/jwt-authentication-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/spring/hexagonal-architecture/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/spring/spring-batch-advanced-patterns/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/spring/spring-batch-migration-sb2-java8-to-sb5-java21/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
     <url>
          <loc>https://alak8ba.github.io/notes/topics/testing/testcontainers-pattern/</loc>
-         <lastmod>2026-05-24</lastmod>
+         <lastmod>2026-06-01</lastmod>
     </url>
 </urlset>
